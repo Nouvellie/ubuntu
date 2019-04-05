@@ -1,10 +1,13 @@
 # SERVICE
 
-## Create ##
-sudo touch servicename.service 
-
-## Settings ##
+## Create
+```
+$ sudo touch servicename.service 
+```
+<br><br>
+## Settings
 * Example for a django project:
+```
 [Unit]
 Description=Django Server
 
@@ -17,20 +20,30 @@ User=ubuntu
 
 [Install]
 WantedBy=multi-user.target
-
+```
 * Authbin:
 Access to blocked ports.
-
-## Reload to update changes ## 
-sudo systemctl daemon-reload
-
-## Start / Restart / Stop ##
-sudo systemctl restart servicename.service
-sudo systemctl start servicename.service
-sudo systemctl stop servicename.service
-
-## Access (Byport 80) ##
-sudo apt install authbind
-sudo touch /etc/authbind/byport/80
-sudo chown ubuntu /etc/authbind/byport/80
-sudo chmod 500 /etc/authbind/byport/80
+<br><br>
+## Reload to update changes
+```
+$ sudo systemctl daemon-reload
+```
+<br><br>
+## Start / Restart / Stop
+```
+$ sudo systemctl restart servicename.service
+```
+```
+$ sudo systemctl start servicename.service
+```
+```
+$ sudo systemctl stop servicename.service
+```
+<br><br>
+## Access (Byport 80)
+```
+$ sudo apt install authbind
+$ sudo touch /etc/authbind/byport/80
+$ sudo chown ubuntu /etc/authbind/byport/80
+$ sudo chmod 500 /etc/authbind/byport/80
+```
