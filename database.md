@@ -5,25 +5,25 @@
 ## Create database
 * Create:
 ```
-CREATE DATABASE IF NOT EXISTS namedb;
+mysql> CREATE DATABASE IF NOT EXISTS namedb;
 ```
 * Select:
 ```
-USE namedb;
+mysql> USE namedb;
 ```
 * Dumped:
 ```
-SOURCE dump.sql;
+mysql> SOURCE dump.sql;
 ```
 <br><br>
 ## Create user and grant all privileges
 * Create user:
 ```
-CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'cdn-devs';
+mysql> CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'cdn-devs';
 ```
 * Grant all privileges:
 ```
-GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
 ```
 <br><br>
 ## Install
