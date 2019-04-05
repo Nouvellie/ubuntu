@@ -16,7 +16,7 @@ $ sudo apt install vim -y
 :q
 :q!
 ```
-Both:
+* Both:
 ```
 :wq
 :wq!   
