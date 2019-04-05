@@ -1,12 +1,23 @@
 # VIM 
 
-## Install ##
-sudo apt install vim -y
-
-## Commands ##
+## Install
+```
+$ sudo apt install vim -y
+```
+<br><br>
+## Commands
 * Write:
-:w or :w!
+```
+:w
+:w!
+```
 * Exit:
-:q or :q!
+```
+:q
+:q!
+```
 Both:
-:wq or :wq!   (in that order)
+```
+:wq
+:wq!   
+```
