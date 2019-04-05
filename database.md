@@ -28,5 +28,5 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
 <br><br>
 ## Install
 ```
-sudo apt install mysql-server -y
+$ sudo apt install mysql-server -y
 ```

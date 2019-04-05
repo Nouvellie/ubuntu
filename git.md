@@ -1,25 +1,37 @@
 # GIT
 
-## Git clone ## 
-git clone https://github.com/Nouvellie/ubuntu
+## Git clone
+```
+$ git clone https://github.com/Nouvellie/ubuntu
+```
 * Username: 
 username@mail.com
 * Password:
 password123456
-
-## Credential store ##
-git config credential.helper store
-
-## Reset fetch head ##
+<br><br>
+## Credential store
+```
+$ git config credential.helper store
+```
+<br><br>
+## Reset fetch head
 * If service dont update branch correctly:
-git fetch origin branch
-git reset --hard FETCH_HEAD
-git clean -df
-
-## Pull/push branch ##
+```
+$ git fetch origin branch
+$ git reset --hard FETCH_HEAD
+$ git clean -df
+```
+<br><br>
+## Pull/push branch
 * Pull:
-git pull origin branch
+```
+$ git pull origin branch
+```
 * Push:
-git push origin branch
+```
+$ git push origin branch
+```
 * Hard push:
-git push -f origin branch
+```
+$ git push -f origin branch
+```

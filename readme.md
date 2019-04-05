@@ -1,5 +1,5 @@
 ###### ######
-# NOUVELLIE
+# UBUNTU
 ###### ######
 
 ### 01. [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/anaconda.md)
