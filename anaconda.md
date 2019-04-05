@@ -7,14 +7,18 @@ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 ```
 $ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh
 ```
-#### ENTER
-#### yes
+```
+ENTER
+yes
+```
 * Path:
-
-#### /home/ubuntu/anaconda3n
+```
+/home/ubuntu/anaconda3n
+```
 * Do you wish the installer to initialize Anaconda3:
-
-#### yes (important)
+```
+yes (important)
+```
 <br><br>
 ## Envs list
 ```
