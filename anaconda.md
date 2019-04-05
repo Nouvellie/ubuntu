@@ -30,7 +30,7 @@ $ conda info --envs
 $ conda list -e
 ```
 <br><br>
-## Create a envs
+## Create an envs
 * Default:
 ```
 $ conda create --name devscdn python=3.6 -y
