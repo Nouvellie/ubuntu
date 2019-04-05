@@ -1,12 +1,6 @@
-###### ######
-# NOUVELLIE
-###### ######
+# DATABASE
 
-# SETTINGS UBUNTU (18.04 LTS) [USER = UBUNTU]
-
-
-
-# MYSQL SERVER
+# MYSQL
 
 ## Create database ##
 * Create:
@@ -21,3 +15,6 @@ SOURCE dump.sql;
 CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'cdn-devs';
 * Grant all privileges:
 GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
+
+## Install ## 
+sudo apt install mysql-server -y
