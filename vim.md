@@ -4,7 +4,6 @@
 ```
 $ sudo apt install vim -y
 ```
-<br><br>
 ## Commands
 * Write:
 ```
