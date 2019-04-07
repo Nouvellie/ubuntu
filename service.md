@@ -4,7 +4,6 @@
 ```
 $ sudo touch servicename.service 
 ```
-<br><br>
 ## Settings
 * Example for a django project:
 ```
@@ -22,13 +21,13 @@ User=ubuntu
 WantedBy=multi-user.target
 ```
 * Authbin:
+```
 Access to blocked ports.
-<br><br>
+```
 ## Reload to update changes
 ```
 $ sudo systemctl daemon-reload
 ```
-<br><br>
 ## Start / Restart / Stop
 ```
 $ sudo systemctl restart servicename.service
@@ -39,7 +38,6 @@ $ sudo systemctl start servicename.service
 ```
 $ sudo systemctl stop servicename.service
 ```
-<br><br>
 ## Access (Byport 80)
 ```
 $ sudo apt install authbind
