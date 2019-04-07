@@ -40,3 +40,18 @@ $ sudo add-apt-repository ppa:tista/adapta -y
 $ sudo apt update -y
 $ sudo apt install adapta-gtk-theme -y
 ```
+<br><br>
+## Gnome shell extensions
+* First:
+[Gnome](https://extensions.gnome.org/)
+Click and allow "click here to install browser extension", and then add.
+* Second:
+```
+$ sudo apt-get install chrome-gnome-shell -y
+```
+* Third:
+[User themes](https://extensions.gnome.org/extension/19/user-themes/)
+Switch to ON and click install.
+```
+alt + F2 then R then ENTER
+```
