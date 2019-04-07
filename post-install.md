@@ -26,7 +26,9 @@ $ sudo apt install apt-xapian-index -y
 $ sudo update-apt-xapian-index -vf
 ```
 * FFmpeg:
+```
 Search, apply and install.
+```
 <br><br>
 ## Gnome tweak tool
 * Install:
