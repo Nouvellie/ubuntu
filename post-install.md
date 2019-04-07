@@ -4,17 +4,14 @@
 ```
 In software & updates check the box of canonical partners.
 ```
-<br><br>
 ## Language
 ```
 In settings/regions&language select "manage installed languages and install it"
 ```
-<br><br>
 ## Update all
 ```
 $ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
 ```
-<br><br>
 ## Synaptic gdebi
 * Install:
 ```
@@ -29,7 +26,6 @@ $ sudo update-apt-xapian-index -vf
 ```
 Search, apply and install.
 ```
-<br><br>
 ## Gnome tweak tool
 * Install:
 ```
@@ -46,7 +42,6 @@ $ sudo add-apt-repository ppa:tista/adapta -y
 $ sudo apt update -y
 $ sudo apt install adapta-gtk-theme -y
 ```
-<br><br>
 ## Gnome shell extensions
 * First:
 ```
