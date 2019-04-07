@@ -33,6 +33,7 @@ $ sudo vim /etc/environment
 <br>
 TEST="PATH"
 TEST2="PATH2"
+
 * Calls vars:
 ```
 $ cd $TEST
@@ -41,7 +42,7 @@ $ cd $TEST
 $ cd $TEST2
 ```
 <br><br>
-## Rename ##
+## Rename
 ```
 $ sudo mv namefile newnamefile
 ```
