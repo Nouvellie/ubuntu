@@ -29,7 +29,7 @@ $ sudo shutdown -r 0
 ```
 $ sudo vim /etc/environment
 ```
-* Envs vars:<br>
+* Envs vars:<br><br>
 TEST="PATH"
 TEST2="PATH2"<br><br>
 * Calls vars:
