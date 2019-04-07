@@ -1,13 +1,22 @@
 # GIT
 
 ## Git clone
+* Install Git:
+```
+$ sudo apt install git -y
+```
+* Git clone:
 ```
 $ git clone https://github.com/Nouvellie/ubuntu
 ```
 * Username: 
+```
 username@mail.com
+```
 * Password:
+```
 password123456
+```
 <br><br>
 ## Credential store
 ```
