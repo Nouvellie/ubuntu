@@ -38,8 +38,6 @@ TEST2="PATH2"
 * Calls vars:
 ```
 $ cd $TEST
-```
-```
 $ cd $TEST2
 ```
 <br><br>
