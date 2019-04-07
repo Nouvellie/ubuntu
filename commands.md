@@ -26,12 +26,15 @@ $ sudo shutdown -r 0
 ```
 <br><br>
 ## Environment variables ##
+* Set it:
 ```
 $ sudo vim /etc/environment
 ```
-* Envs vars:<br><br>
+* Envs vars:
+```
 TEST="PATH"
-TEST2="PATH2"<br><br>
+TEST2="PATH2"
+```
 * Calls vars:
 ```
 $ cd $TEST
