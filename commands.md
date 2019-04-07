@@ -33,7 +33,7 @@ $ sudo vim /etc/environment
 <br>
 TEST="PATH"
 TEST2="PATH2"
-
+<br>
 * Calls vars:
 ```
 $ cd $TEST
