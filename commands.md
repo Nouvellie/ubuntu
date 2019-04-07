@@ -31,7 +31,7 @@ $ sudo vim /etc/environment
 ```
 * Envs vars:<br>
 TEST="PATH"
-TEST2="PATH2"<br>
+TEST2="PATH2"<br><br>
 * Calls vars:
 ```
 $ cd $TEST
