@@ -42,7 +42,7 @@ $ sudo apt install adapta-gtk-theme -y
 ```
 <br><br>
 ## Gnome shell extensions
-* First:
+* First:<br>
 [Gnome](https://extensions.gnome.org/)
 Click and allow "click here to install browser extension", and then add.
 * Second:
