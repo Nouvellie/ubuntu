@@ -1,7 +1,7 @@
 # DATABASE
 
 ## (MYSQL)
-<br><br>
+
 ## Create database
 * Create:
 ```
@@ -15,7 +15,6 @@ mysql> USE namedb;
 ```
 mysql> SOURCE dump.sql;
 ```
-<br><br>
 ## Create user and grant all privileges
 * Create user:
 ```
@@ -25,7 +24,6 @@ mysql> CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'cdn-devs';
 ```
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
 ```
-<br><br>
 ## Install
 ```
 $ sudo apt install mysql-server -y
