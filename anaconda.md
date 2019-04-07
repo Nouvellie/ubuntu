@@ -57,7 +57,9 @@ $ sudo apt install mysql-server -y
 ```
 <br><br>
 ## More libs (conda install lib)
+```
 [Anaconda repo links](https://anaconda.org/anaconda/repo)
+```
 <br><br>
 ## Conda activate/deactivate
 * Activate:
