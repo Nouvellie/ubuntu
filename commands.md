@@ -4,7 +4,6 @@
 ```
 $ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
 ```
-<br><br>
 ## Delete
 * File/files:
 ```
@@ -14,17 +13,14 @@ $ sudo rm -rf filename1 filename2
 ```
 $ sudo rm -rf asterisk.xml
 ```
-<br><br>
 ## Path
 ```
 $ pwd
 ```
-<br><br>
 ## Shutdown
 ```
 $ sudo shutdown -r 0
 ```
-<br><br>
 ## Environment variables ##
 * Set it:
 ```
@@ -40,7 +36,6 @@ TEST2="PATH2"
 $ cd $TEST
 $ cd $TEST2
 ```
-<br><br>
 ## Rename
 ```
 $ sudo mv namefile newnamefile
