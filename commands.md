@@ -40,3 +40,8 @@ $ cd $TEST2
 ```
 $ sudo mv namefile newnamefile
 ```
+## Chmod 
+* 777 to all folder/subfolders:
+```
+$ sudo chmod -R 777 foldername
+```
