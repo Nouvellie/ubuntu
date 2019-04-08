@@ -43,18 +43,18 @@ $ sudo apt update -y
 $ sudo apt install adapta-gtk-theme -y
 ```
 ## Gnome shell extensions
-* First:
-```
+* First:<br>
 [Gnome](https://extensions.gnome.org/)
+```
 Click and allow "click here to install browser extension", and then add.
 ```
 * Second:
 ```
 $ sudo apt-get install chrome-gnome-shell -y
 ```
-* Third:
-```
+* Third:<br>
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
+```
 Switch to ON and click install.
 alt + F2 then R then ENTER
 ```
