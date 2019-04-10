@@ -5,7 +5,7 @@
 $ sudo touch servicename.service 
 ```
 ## Settings
-* Example for a django project:
+* Example of a django project:
 ```
 [Unit]
 Description=Django Server
@@ -22,7 +22,7 @@ WantedBy=multi-user.target
 ```
 * Authbin:
 ```
-Access to blocked ports.
+Access to blocked ports, in this case port 80.
 ```
 ## Reload to update changes
 ```
