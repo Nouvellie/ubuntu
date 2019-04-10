@@ -41,3 +41,12 @@ $ git push origin branch
 ```
 $ git push -f origin branch
 ```
+## Git ignore
+* Ignore only xml from root folder.
+```
+/*.xml
+```
+* Ignore all the xml files. (rootfolder/subfolders)
+```
+**/*.xml
+```
