@@ -32,7 +32,7 @@ $ conda list -e
 ```
 $ conda create --name devscdn python=3.6 -y
 ```
-* Giving a Path: (and version of python by default)
+* Giving a Path: (and the default python version)
 ```
 $ conda create --prefix /opt/anaconda/envs/envsname python=3.6 -y
 ```
@@ -45,7 +45,7 @@ $ conda env export | grep -v "^prefix: " > environment.yml
 ```
 $ conda env create -f environment.yml
 ```
-## MySQL server out envs (to avoid errors if the project use mysql db (important))
+## MySQL server out envs (to avoid errors if the project uses mysql db (important))
 ```
 $ sudo apt install mysql-server -y
 ```
