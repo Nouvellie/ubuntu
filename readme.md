@@ -1,6 +1,4 @@
-###### ######
 # UBUNTU
-###### ######
 
 ### 01. [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/anaconda.md)
 ### 02. [Commands.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/commands.md)
