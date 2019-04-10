@@ -2,11 +2,11 @@
 
 ## Canonical partners
 ```
-In software & updates check the box of canonical partners.
+In software & updates check the canonical partners box.
 ```
 ## Language
 ```
-In settings/regions&language select "manage installed languages and install it"
+Under settings/regions&languages select "manage installed languages and install them completely".
 ```
 ## Update all
 ```
@@ -46,7 +46,7 @@ $ sudo apt install adapta-gtk-theme -y
 * First:<br>
 [Gnome](https://extensions.gnome.org/)
 ```
-Click and allow "click here to install browser extension", and then add.
+Click and allow it to "click here to install the browser extension", and then add.
 ```
 * Second:
 ```
@@ -56,5 +56,5 @@ $ sudo apt-get install chrome-gnome-shell -y
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 ```
 Switch to ON and click install.
-alt + F2 then R then ENTER
+After that "alt + F2", then R and then ENTER
 ```
