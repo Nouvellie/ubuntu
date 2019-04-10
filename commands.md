@@ -21,7 +21,7 @@ $ pwd
 ```
 $ sudo shutdown -r 0
 ```
-## Environment variables ##
+## Environment variables
 * Set it:
 ```
 $ sudo vim /etc/environment
