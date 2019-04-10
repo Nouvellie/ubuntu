@@ -38,6 +38,10 @@ $ sudo systemctl start servicename.service
 ```
 $ sudo systemctl stop servicename.service
 ```
+## Turns the service on, on the next reboot or on the next start event. (It persists after reboot)
+```
+$ sudo systemctl enable servicename.service
+```
 ## Access (Byport 80)
 ```
 $ sudo apt install authbind
