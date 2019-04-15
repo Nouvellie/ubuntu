@@ -13,7 +13,8 @@ $ yes
 ```
 * Path:
 ```
-$ /home/ubuntu/anaconda3n
+$ /home/ubuntu/anaconda3
+$ /opt/anaconda3
 ```
 * Do you wish the installer to initialize Anaconda3:
 ```
