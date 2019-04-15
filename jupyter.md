@@ -34,3 +34,37 @@ $ jupyterhub
 ```
 $ jupyterhub --generate-config 
 ```
+## Create jupyterhub cert and key: (/opt/user-jupyterhub/jupyterhub.key and /opt/user-jupyterhub/jupyterhub.crt)
+```
+$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout jupyterhub.key -out jupyterhub.crt
+```
+## Create and add user to a group
+* Create a group:
+```
+$ sudo groupadd groupname
+```
+* Adding a user to a group:
+```
+$ sudo adduser username groupname
+```
+* Check group members:
+```
+$ sudo apt install members
+$ members groupname
+```
+* Edit jupyterhub config:
+```
+$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py
+```
+* Change the default options:
+```
+c.JupyterHub.port = 443
+c.JupyterHub.ssl_cert = '/opt/cdn-jupyterhub/jupyterhub.crt'
+c.JupyterHub.ssl_key = '/opt/cdn-jupyterhub/jupyterhub.key'
+c.Spawnerd.cmd = ['jupyter-labhub']
+c.Spawner.default_url = '/lab'
+c.Spawner.notebook_dir = '~'
+c.Spawner.port = 443
+c.Authenticator.admin_users = ['adminuser']
+c.LocalAuthenticator.group_whitelist = ['groupname:']
+```
