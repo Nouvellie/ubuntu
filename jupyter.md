@@ -43,7 +43,7 @@ $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout jupyterhub.key -ou
 ```
 $ sudo groupadd groupname
 ```
-* Adding a user to a group:
+* Add a user to a group:
 ```
 $ sudo adduser username groupname
 ```
@@ -52,15 +52,15 @@ $ sudo adduser username groupname
 $ sudo apt install members
 $ members groupname
 ```
-* Edit jupyterhub config:
-```
-$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py
-```
-* Install jupyter lab/hub extension:
+## Set jupyterhub values
+* Install the jupyter lab/hub extension:
 ```
 $ jupyter labextension install @jupyterlab/hub-extension
 ```
-* Change the default options:
+* Change the default settings:
+```
+$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py
+```
 ```
 c.JupyterHub.port = 443
 c.JupyterHub.ssl_cert = '/opt/cdn-jupyterhub/jupyterhub.crt'
