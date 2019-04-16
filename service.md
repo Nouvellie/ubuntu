@@ -12,8 +12,8 @@ Description=Django Server
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/authbind --deep CONDAENVSPATH/bin/python3 manage.py runserver 0.0.0.0:80
-WorkingDirectory=PATHDJANGOPROJECT
+ExecStart=/usr/bin/authbind --deep condaenvspath/bin/python3 manage.py runserver 0.0.0.0:80
+WorkingDirectory=pathdjangoproject
 Restart=on-failure
 User=ubuntu
 
