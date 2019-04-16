@@ -72,3 +72,9 @@ c.Spawner.port = 443
 c.Authenticator.admin_users = ['adminuser']
 c.LocalAuthenticator.group_whitelist = ['groupname']
 ```
+
+## ERRORS
+* [Keyerror] User adminuser does not exist:
+```
+sudo rm -rf jupyterhub.sqlite
+```
