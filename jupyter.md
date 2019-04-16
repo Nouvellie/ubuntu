@@ -56,15 +56,19 @@ $ members groupname
 ```
 $ sudo vim /opt/user-jupyterhub/jupyterhub_config.py
 ```
+* Install jupyter lab/hub extension:
+```
+$ jupyter labextension install @jupyterlab/hub-extension
+```
 * Change the default options:
 ```
 c.JupyterHub.port = 443
 c.JupyterHub.ssl_cert = '/opt/cdn-jupyterhub/jupyterhub.crt'
 c.JupyterHub.ssl_key = '/opt/cdn-jupyterhub/jupyterhub.key'
-c.Spawnerd.cmd = ['jupyter-labhub']
+c.Spawner.cmd = ['jupyter-labhub']
 c.Spawner.default_url = '/lab'
 c.Spawner.notebook_dir = '~'
 c.Spawner.port = 443
 c.Authenticator.admin_users = ['adminuser']
-c.LocalAuthenticator.group_whitelist = ['groupname:']
+c.LocalAuthenticator.group_whitelist = ['groupname']
 ```
