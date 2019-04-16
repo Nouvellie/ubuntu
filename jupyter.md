@@ -101,9 +101,12 @@ After=syslog.target network.target
 
 [Service]
 User=root
-ExecStart=/opt/user-jupyterhub/jupyterhub --config=/opt/user-jupyterhub/jupyterhub_config.py
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+ExecStart=/opt/anaconda3/envs/jupyterbase/bin/jupyterhub
 WorkingDirectory=/opt/user-jupyterhub
 KillMode=process
+Restart=always
+#RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
