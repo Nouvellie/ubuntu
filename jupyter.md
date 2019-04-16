@@ -96,13 +96,14 @@ $ sudo vim /etc/systemd/system/servicename.service
 ```
 ```
 [Unit]
-Description=Nameservice Jupyterhub
+Description=Servicename Jupyterhub
 After=syslog.target network.target
 
 [Service]
 User=root
-Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/anaconda3/bin"
-ExecStart=/opt/anaconda3/bin/jupyterbase -f /opt/user-jupyterhub/jupyterhub_config.py
+ExecStart=/opt/user-jupyterhub/jupyterhub --config=/opt/user-jupyterhub/jupyterhub_config.py
+WorkingDirectory=/opt/user-jupyterhub
+KillMode=process
 
 [Install]
 WantedBy=multi-user.target
@@ -116,4 +117,12 @@ KillMode=process
 * In jupyterhub_config.py:
 ```
 c.JupyterHub.cleanup_servers = False 
+```
+* Reload daemon:
+```
+sudo systemctl daemon-reload
+```
+* Restart instance or service:
+```
+sudo systemctl enable servicename.service
 ```
