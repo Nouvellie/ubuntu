@@ -63,8 +63,8 @@ $ sudo vim /opt/user-jupyterhub/jupyterhub_config.py
 ```
 ```
 c.JupyterHub.port = 443
-c.JupyterHub.ssl_cert = '/opt/cdn-jupyterhub/jupyterhub.crt'
-c.JupyterHub.ssl_key = '/opt/cdn-jupyterhub/jupyterhub.key'
+c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'
+c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'
 c.Spawner.cmd = ['jupyter-labhub']
 c.Spawner.default_url = '/lab'
 c.Spawner.notebook_dir = '~'
@@ -96,7 +96,7 @@ $ sudo vim /etc/systemd/system/servicename.service
 ```
 ```
 [Unit]
-Description=Cardionomous Jupyterhub server
+Description=Jupyterhub server
 
 [Service]
 Environment="PATH=/opt/anaconda3/envs/jupyterbase/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
