@@ -79,8 +79,41 @@ $ python -m ipykernel install --user --name jupyterbase --display-name "Python (
 
 ```
 
-## ERRORS
+## Errors
 * [Keyerror] User adminuser does not exist:
 ```
 sudo rm -rf jupyterhub.sqlite
+```
+
+## As system service (systemd)
+* Create service:
+```
+$ sudo touch /etc/systemd/system/servicename.service
+```
+* Configs:
+```
+$ sudo vim /etc/systemd/system/servicename.service
+```
+```
+[Unit]
+Description=Nameservice Jupyterhub
+After=syslog.target network.target
+
+[Service]
+User=root
+Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/anaconda3/bin"
+ExecStart=/opt/anaconda3/bin/jupyterbase -f /opt/user-jupyterhub/jupyterhub_config.py
+
+[Install]
+WantedBy=multi-user.target
+```
+## JupyterHub config to be respected by systemd:
+* In servicename.service:
+```
+[Service]
+KillMode=process
+```
+* In jupyterhub_config.py:
+```
+c.JupyterHub.cleanup_servers = False 
 ```
