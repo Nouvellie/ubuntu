@@ -96,20 +96,29 @@ $ sudo vim /etc/systemd/system/servicename.service
 ```
 ```
 [Unit]
-Description=Servicename Jupyterhub
-After=syslog.target network.target
+Description=Cardionomous Jupyterhub server
 
 [Service]
-User=root
-Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+Environment="PATH=/opt/anaconda3/envs/jupyterbase/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 ExecStart=/opt/anaconda3/envs/jupyterbase/bin/jupyterhub
 WorkingDirectory=/opt/user-jupyterhub
-KillMode=process
-Restart=always
-#RestartSec=10
+Restart=on-failure
+User=root
 
 [Install]
 WantedBy=multi-user.target
+```
+## Enable server after connect
+* In servicename.service:
+```
+[Unit]
+After=syslog.target network.target
+```
+## Auto restart
+* In servicename.service:
+```
+Restart=always
+RestartSec=10
 ```
 ## JupyterHub config to be respected by systemd:
 * In servicename.service:
