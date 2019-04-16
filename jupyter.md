@@ -72,6 +72,12 @@ c.Spawner.port = 443
 c.Authenticator.admin_users = ['adminuser']
 c.LocalAuthenticator.group_whitelist = ['groupname']
 ```
+* Show conda environments in jupyterhub kernell:
+```
+$ conda install -c conda-forge nb_conda_kernels
+$ python -m ipykernel install --user --name jupyterbase --display-name "Python (jupyterbase)"
+
+```
 
 ## ERRORS
 * [Keyerror] User adminuser does not exist:
