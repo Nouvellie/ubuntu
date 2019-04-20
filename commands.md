@@ -45,3 +45,7 @@ $ sudo mv namefile newnamefile
 ```
 $ sudo chmod -R 777 foldername
 ```
+## System information
+```
+$ sudo dmidecode | grep -A 9 "System Information"
+```
