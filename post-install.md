@@ -40,16 +40,11 @@ $ sudo apt install arc-theme papirus-icon-theme -y
 $ sudo add-apt-repository ppa:tista/adapta -y && sudo apt update -y && sudo apt install adapta-gtk-theme -y
 ```
 ## Gnome shell extensions
-* First:<br>
-[Gnome](https://extensions.gnome.org/)
-```
-Click and allow it to "click here to install the browser extension", and then add.
-```
-* Second:
+* First:
 ```
 $ sudo apt-get install chrome-gnome-shell -y
 ```
-* Third:<br>
+* Second:<br>
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 ```
 Switch to ON and click install.
