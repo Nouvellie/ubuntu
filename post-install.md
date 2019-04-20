@@ -19,8 +19,7 @@ $ sudo apt install synaptic gdebi -y
 ```
 * Synaptic search box:
 ```
-$ sudo apt install apt-xapian-index -y
-$ sudo update-apt-xapian-index -vf
+$ sudo apt install apt-xapian-index -y && sudo update-apt-xapian-index -vf
 ```
 * FFmpeg:
 ```
@@ -38,9 +37,7 @@ $ sudo apt install arc-theme papirus-icon-theme -y
 * Adapta gtk theme:
 
 ```
-$ sudo add-apt-repository ppa:tista/adapta -y
-$ sudo apt update -y
-$ sudo apt install adapta-gtk-theme -y
+$ sudo add-apt-repository ppa:tista/adapta -y && sudo apt update -y && sudo apt install adapta-gtk-theme -y
 ```
 ## Gnome shell extensions
 * First:<br>
