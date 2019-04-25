@@ -1,6 +1,9 @@
-# DOWNLOAD, INSTALL ANACONDA, AND SOME COMMANDS 
+<div>
 
-## Download
+<h1>DOWNLOAD, INSTALL ANACONDA, AND SOME COMMANDS</h1>
+
+<h2>Download</h2>
+
 ```
 $ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 ```
@@ -67,3 +70,5 @@ $ conda deactivate
 ```
 $ conda update -n base -c defaults conda
 ```
+
+</div>
