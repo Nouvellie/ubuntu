@@ -3,8 +3,8 @@
 <h1>ANACONDA</h1>
 <h2>Download</h2>
 
-`$ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh`<br>
-<h2>Install</h2>
+`$ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh`
+<br><h2>Install</h2>
 
 `$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
 
