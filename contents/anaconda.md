@@ -5,6 +5,7 @@
 
 `$ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh`
 <h2>Install</h2>
+<h4>Run bash:</h4>
 
 `$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
 
@@ -52,7 +53,7 @@
 
 `$ sudo apt install mysql-server -y`
 
-<h2>More libs (conda install lib)</h2><br>
+<h2>More libs (conda install lib)</h2>
 
 [Anaconda repo links](https://anaconda.org/anaconda/repo)<br>
 
