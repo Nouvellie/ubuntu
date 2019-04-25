@@ -13,25 +13,25 @@
 <kbd>ENTER</kbd><br>
 `yes`
 
+<h3>Path:</h3>
 
-* Path:
-```
-$ /home/ubuntu/anaconda3
-$ /opt/anaconda3
-```
-* Do you wish the installer to initialize Anaconda3:
-```
-$ yes (important)
-```
-## Envs list
-```
-$ conda info --envs
-```
-## Libs list on envs
-```
-$ conda list -e
-```
-## Create an envs
+`/home/ubuntu/anaconda3`
+`/opt/anaconda3`
+
+<h3>Do you wish the installer to initialize Anaconda3:</h3>
+
+`yes (important)`
+
+<h2>Envs list</h2>
+
+`$ conda info --envs`
+
+<h2>Libs list on envs</h2>
+
+`$ conda list -e`
+
+<h2>Create an envs</h2>
+
 * Default:
 ```
 $ conda create --name devscdn python=3.6 -y
