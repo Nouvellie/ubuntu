@@ -10,7 +10,7 @@
 
 `$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
 
-<kbd>ENTER</kbd><br>
+<kbd>ENTER</kbd><br><br>
 `yes`
 
 <h3>Path:</h3>
