@@ -1,13 +1,13 @@
 <div>
 <h1>Contents</h1>
 
-- [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/anaconda.md)
-- [Commands.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/commands.md)
-- [Database.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/database.md)
+- [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
+- [Commands.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/commands.md)
+- [Database.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/database.md)
 - [Git.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/git.md)
-- [Jupyter.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/jupyter.md)
-- [Post install.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/post-install.md)
-- [Service.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/service.md)
-- [Sublime text.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/sublime-text.md)
-- [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/vim.md)
+- [Jupyter.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/jupyter.md)
+- [Post install.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/post-install.md)
+- [Service.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/service.md)
+- [Sublime text.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/sublime-text.md)
+- [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
 </div>
