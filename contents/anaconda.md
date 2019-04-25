@@ -11,7 +11,7 @@
 `$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
 
 <kbd>ENTER</kbd>
-> yes
+`yes`
 
 
 * Path:
