@@ -1,18 +1,19 @@
 <div>
 
-<h1>DOWNLOAD, INSTALL ANACONDA, AND SOME COMMANDS</h1>
+<h1>ANACONDA</h1>
 
 <h2>Download</h2>
 
 `$ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh`
 
-## Install
-* Install:
-```
-$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh
-$ ENTER
-$ yes
-```
+<h2>Install</h2>
+
+`$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
+
+<kbd>ENTER<kbd>
+> yes
+
+
 * Path:
 ```
 $ /home/ubuntu/anaconda3
