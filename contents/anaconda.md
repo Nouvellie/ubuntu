@@ -32,43 +32,43 @@
 
 <h2>Create an envs</h2>
 
-* Default:
-```
-$ conda create --name devscdn python=3.6 -y
-```
-* Giving a Path: (and the default python version)
-```
-$ conda create --prefix /opt/anaconda/envs/envsname python=3.6 -y
-```
-## Export/import a created envs
-* Export:
-```
-$ conda env export | grep -v "^prefix: " > environment.yml
-```
-* Import:
-```
-$ conda env create -f environment.yml
-```
-## MySQL server out envs (to avoid errors if the project uses mysql db (important))
-```
-$ sudo apt install mysql-server -y
-```
-## More libs (conda install lib)
-```
-[Anaconda repo links](https://anaconda.org/anaconda/repo)
-```
-## Conda activate/deactivate
-* Activate:
-```
-$ conda activate envsname
-```
-* Deactivate:
-```
-$ conda deactivate
-```
-## Conda update
-```
-$ conda update -n base -c defaults conda
-```
+<h3>Default:</h3>
+
+`$ conda create --name devscdn python=3.6 -y`
+
+<h3>Giving a Path: (and the default python version)</h3>
+
+`$ conda create --prefix /opt/anaconda/envs/envsname python=3.6 -y`
+
+<h2>Export/import a created envs</h2>
+
+<h3>Export:</h3>
+
+`$ conda env export | grep -v "^prefix: " > environment.yml`
+
+<h3>Import:</h3>
+
+`$ conda env create -f environment.yml`
+
+<h2>MySQL server out envs (to avoid errors if the project uses mysql db (important))</h2>
+
+`$ sudo apt install mysql-server -y`
+
+<h2>More libs (conda install lib)</h2><br>
+
+[Anaconda repo links](https://anaconda.org/anaconda/repo)<br>
+
+<h2>Conda activate/deactivate</h2>
+<h3>Activate:</h3>
+
+`$ conda activate envsname`
+
+<h3>Deactivate:</h3>
+
+`$ conda deactivate`
+
+<h2>Conda update</h2>
+
+`$ conda update -n base -c defaults conda`
 
 </div>
