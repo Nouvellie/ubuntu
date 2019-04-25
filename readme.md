@@ -1,5 +1,5 @@
 <div>
-<h1>Contents</h1>
+<h1>CONTENTS</h1>
 
 - [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
 - [Commands.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/commands.md)
