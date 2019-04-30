@@ -43,11 +43,11 @@
 `$ git push -f origin branch`
 
 <h2>Git ignore (example for xml files)</h2>
-<h4>Ignore only from root folder.</h4>
+<h4>Ignore only from root folder:</h4>
 
 `/*.xml`
 
-<h4>Ignore all the files. (rootfolder/subfolders)</h4>
+<h4>Ignore all the files: (rootfolder/subfolders)</h4>
 
 `**/*.xml`
 
