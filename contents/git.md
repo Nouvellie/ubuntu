@@ -1,8 +1,7 @@
 <div>
 
 <h1>GIT</h1>
-<h2>Git clone</h2>
-<h4>Install Git</h4>
+<h2>Install Git</h2>
 
 `$ sudo apt install git -y`
 
