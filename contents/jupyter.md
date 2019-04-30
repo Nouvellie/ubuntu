@@ -112,19 +112,19 @@
 `:wq!`
 
 <h2>Enable server after connect</h2>
-<h4>In servicename.service:</h4>
+<h4>In suser-jupyterhub.service:</h4>
 
 `[Unit]`<br>
 `After=syslog.target network.target`
 
 <h2>Auto restart</h2>
-<h4>In servicename.service:</h4>
+<h4>In user-jupyterhub.service:</h4>
 
 `Restart=always`<br>
 `RestartSec=10`
 
 <h2>JupyterHub config to be respected by systemd:</h2>
-<h4>In servicename.service:</h4>
+<h4>In user-jupyterhub.service:</h4>
 
 `[Service]`<br>
 `KillMode=process`
@@ -139,4 +139,12 @@
 
 <h4>Restart instance or service:</h4>
 
-`$ sudo systemctl enable servicename.service`
+`$ sudo systemctl enable user-jupyterhub.service`
+
+<h4>Start / Restart / Stop</h4>
+
+`$ sudo systemctl start user-jupyterhub.service`<br>
+`$ sudo systemctl restart user-jupyterhub.service`<br>
+`$ sudo systemctl stop user-jupyterhub.service`
+
+</div>
