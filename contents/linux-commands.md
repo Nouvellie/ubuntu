@@ -10,7 +10,7 @@
 
 `$ sudo rm -rf filename1 filename2`
 
-<h4>Set of files: (xml example)</h4>
+<h4>File set: (xml example)</h4>
 
 `$ sudo rm -rf *.xml`
 
