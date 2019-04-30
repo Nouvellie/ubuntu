@@ -63,14 +63,14 @@
 
 `$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`<br>
 
-`c.JupyterHub.port = 443`
-`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'`
-`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'`
-`c.Spawner.cmd = ['jupyter-labhub']`
-`c.Spawner.default_url = '/lab'`
-`c.Spawner.notebook_dir = '~'`
-`c.Spawner.port = 443`
-`c.Authenticator.admin_users = ['adminuser']`
+`c.JupyterHub.port = 443`<br>
+`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'`<br>
+`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'`<br>
+`c.Spawner.cmd = ['jupyter-labhub']`<br>
+`c.Spawner.default_url = '/lab'`<br>
+`c.Spawner.notebook_dir = '~'`<br>
+`c.Spawner.port = 443`<br>
+`c.Authenticator.admin_users = ['adminuser']`<br>
 `c.LocalAuthenticator.group_whitelist = ['groupname']`
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
