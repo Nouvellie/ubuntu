@@ -129,7 +129,7 @@
 `[Service]`<br>
 `KillMode=process`
 
-<h4>In jupyterhub_config.py:</h4>
+<h4>[jupyterhub_config.py]</h4>
 
 `c.JupyterHub.cleanup_servers = False `
 
