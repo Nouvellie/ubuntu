@@ -73,7 +73,7 @@
 `c.Authenticator.admin_users = ['adminusername']`<br>
 `c.LocalAuthenticator.group_whitelist = ['groupname']`<br>
 
-<kbd>:</kbd> + <kbd>2</kbd> + <kbd>q</kbd> + <kbd>!</kbd>
+<kbd>:</kbd> + <kbd>w</kbd> + <kbd>q</kbd> + <kbd>!</kbd>
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
 
