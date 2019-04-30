@@ -5,6 +5,7 @@
 
 `$ sudo apt install git -y`
 
+<h2>Cloning a repository</h2>
 <h4>Git clone:</h4>
 
 `$ git clone https://github.com/Nouvellie/ubuntu`
