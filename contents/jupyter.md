@@ -64,6 +64,8 @@
 
 `$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`<br>
 
+<h4>[jupyterhub_config.py]</h4>
+
 `c.JupyterHub.port = 443`<br>
 `c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/cert/jupyterhub.crt'`<br>
 `c.JupyterHub.ssl_key = '/opt/user-jupyterhub/cert/jupyterhub.key'`<br>
@@ -74,7 +76,7 @@
 `c.LocalAuthenticator.group_whitelist = ['groupname']`
 
 <h4>Save changes and exit:</h4>
-<kbd>:</kbd> + <kbd>w</kbd> + <kbd>q</kbd> + <kbd>!</kbd>
+`:wq!`
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
 
@@ -90,6 +92,8 @@
 <h4>Create service and add settings:</h4>
 
 `$ sudo vim /etc/systemd/system/user-jupyterhub.service`<br>
+
+<h4>[user-jupyterhub.service]</h4>
 
 `[Unit]`<br>
 `Description=Jupyterhub server`<br><br>
