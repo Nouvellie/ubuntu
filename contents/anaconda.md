@@ -14,7 +14,6 @@
 
 <h4>Path:</h4>
 
-`/home/ubuntu/anaconda3`
 `/opt/anaconda3`
 
 <h4>Do you wish the installer to initialize Anaconda3:</h4>
@@ -29,11 +28,15 @@
 
 `$ conda list -e`
 
+<h2>Conda update</h2>
+
+`$ conda update -n base -c defaults conda`
+
 <h2>Create an envs</h2>
 
 <h4>Default:</h4>
 
-`$ conda create --name devscdn python=3.6 -y`
+`$ conda create --name envsname python=3.6 -y`
 
 <h4>Giving a Path: (and the default python version)</h4>
 
@@ -55,7 +58,7 @@
 
 <h2>More libs (conda install lib)</h2>
 
-[Anaconda repo links](https://anaconda.org/anaconda/repo)<br>
+[Anaconda packages link](https://anaconda.org/anaconda/repo)<br>
 
 <h2>Conda activate/deactivate</h2>
 <h4>Activate:</h4>
@@ -65,9 +68,5 @@
 <h4>Deactivate:</h4>
 
 `$ conda deactivate`
-
-<h2>Conda update</h2>
-
-`$ conda update -n base -c defaults conda`
 
 </div>
