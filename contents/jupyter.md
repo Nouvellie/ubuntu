@@ -71,8 +71,9 @@
 `c.Spawner.default_url = '/lab'`<br>
 `c.Spawner.notebook_dir = '~'`<br>
 `c.Authenticator.admin_users = ['adminusername']`<br>
-`c.LocalAuthenticator.group_whitelist = ['groupname']`<br>
+`c.LocalAuthenticator.group_whitelist = ['groupname']`
 
+<h4>Save changes and exit:</h4>
 <kbd>:</kbd> + <kbd>w</kbd> + <kbd>q</kbd> + <kbd>!</kbd>
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
