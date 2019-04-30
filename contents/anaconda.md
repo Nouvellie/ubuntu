@@ -46,11 +46,11 @@
 
 <h4>Export:</h4>
 
-`$ conda env export | grep -v "^prefix: " > environment.yml`
+`$ conda env export | grep -v "^prefix: " > envsname.yml`
 
 <h4>Import:</h4>
 
-`$ conda env create -f environment.yml`
+`$ conda env create -f envsname.yml`
 
 <h2>MySQL server out envs (to avoid errors if the project uses mysql db (important))</h2>
 
