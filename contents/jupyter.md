@@ -141,7 +141,7 @@
 
 `$ sudo systemctl enable user-jupyterhub.service`
 
-<h4>Start / Restart / Stop</h4>
+<h4>Start / Restart / Stop:</h4>
 
 `$ sudo systemctl start user-jupyterhub.service`<br>
 `$ sudo systemctl restart user-jupyterhub.service`<br>
