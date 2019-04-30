@@ -41,7 +41,7 @@
 
 <h4>Giving a Path: (and the default python version)</h4>
 
-`$ conda create --prefix /opt/anaconda/envs/envsname python=3.6 -y`
+`$ conda create --prefix /opt/anaconda3/envs/envsname python=3.6 -y`
 
 <h2>Export/import a created envs</h2>
 <h4>Export:</h4>
