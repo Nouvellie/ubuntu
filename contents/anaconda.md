@@ -43,7 +43,6 @@
 `$ conda create --prefix /opt/anaconda/envs/envsname python=3.6 -y`
 
 <h2>Export/import a created envs</h2>
-
 <h4>Export:</h4>
 
 `$ conda env export | grep -v "^prefix: " > envsname.yml`
