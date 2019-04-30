@@ -1,52 +1,54 @@
-# GIT
+<div>
 
-## Git clone
-* Install Git:
-```
-$ sudo apt install git -y
-```
-* Git clone:
-```
-$ git clone https://github.com/Nouvellie/ubuntu
-```
-* Username: 
-```
-username@mail.com
-```
-* Password:
-```
-password123456
-```
-## Credential store
-```
-$ git config credential.helper store
-```
-## Reset fetch head
-* If service dont update branch correctly:
-```
-$ git fetch origin branch
-$ git reset --hard FETCH_HEAD
-$ git clean -df
-```
-## Pull/push branch
-* Pull:
-```
-$ git pull origin branch
-```
-* Push:
-```
-$ git push origin branch
-```
-* Hard push:
-```
-$ git push -f origin branch
-```
-## Git ignore
-* Ignore only xml from root folder.
-```
-/*.xml
-```
-* Ignore all the xml files. (rootfolder/subfolders)
-```
-**/*.xml
-```
+<h1>GIT</h1>
+<h2>Git clone</h2>
+<h4>Install Git</h4>
+
+`$ sudo apt install git -y`
+
+<h4>Git clone:</h4>
+
+`$ git clone https://github.com/Nouvellie/ubuntu`
+
+<h4>Username: </h4>
+
+`username@mail.com`
+
+<h4>Password:</h4>
+
+`password123456`
+
+<h2>Credential store</h2>
+
+`$ git config credential.helper store`
+
+<h2>Reset fetch head</h2>
+<h4>If service dont update branch correctly:</h4>
+
+`$ git fetch origin branch`<br>
+`$ git reset --hard FETCH_HEAD`<br>
+`$ git clean -df`
+
+<h2>Pull/push branch</h2>
+<h4>Pull:</h4>
+
+`$ git pull origin branch`
+
+<h4>Push:</h4>
+
+`$ git push origin branch`
+
+<h4>Hard push:</h4>
+
+`$ git push -f origin branch`
+
+<h2>Git ignore</h2>
+<h4>Ignore only xml from root folder.</h4>
+
+`/*.xml`
+
+<h4>Ignore all the xml files. (rootfolder/subfolders)</h4>
+
+`**/*.xml`
+
+</div>
