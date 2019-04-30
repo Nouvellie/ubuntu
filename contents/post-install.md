@@ -44,7 +44,7 @@ $ sudo add-apt-repository ppa:tista/adapta -y && sudo apt update -y && sudo apt 
 ```
 $ sudo apt-get install chrome-gnome-shell -y
 ```
-* Second:<br>
+* Second:<br><br>
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 ```
 Switch to ON and click install.
