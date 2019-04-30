@@ -8,7 +8,7 @@
 <h2>Install</h2>
 <h4>Run bash:</h4>
 
-`$ sudo bash ./Anaconda3-2018.12-Linux-x86_64.sh`
+`$ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh`
 
 <kbd>ENTER</kbd><br><br>
 `yes`
