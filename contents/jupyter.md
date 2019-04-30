@@ -84,7 +84,7 @@
 <h2>Errors</h2>
 <h4>[Keyerror] User adminuser does not exist:</h4>
 
-`sudo rm -rf jupyterhub.sqlite`
+`$ sudo rm -rf jupyterhub.sqlite`
 
 <h2>As system service (systemd)</h2>
 <h4>Create service and add settings:</h4>
@@ -102,33 +102,32 @@
 `[Install]`<br>
 `WantedBy=multi-user.target`
 
-## Enable server after connect
-* In servicename.service:
-```
-[Unit]
-After=syslog.target network.target
-```
-## Auto restart
-* In servicename.service:
-```
-Restart=always
-RestartSec=10
-```
-## JupyterHub config to be respected by systemd:
-* In servicename.service:
-```
-[Service]
-KillMode=process
-```
-* In jupyterhub_config.py:
-```
-c.JupyterHub.cleanup_servers = False 
-```
-* Reload daemon:
-```
-sudo systemctl daemon-reload
-```
-* Restart instance or service:
-```
-sudo systemctl enable servicename.service
-```
+<h2>Enable server after connect</h2>
+<h4>In servicename.service:</h4>
+
+`[Unit]`<br>
+`After=syslog.target network.target`
+
+<h2>Auto restart</h2>
+<h4>In servicename.service:</h4>
+
+`Restart=always`<br>
+`RestartSec=10`
+
+<h2>JupyterHub config to be respected by systemd:</h2>
+<h4>In servicename.service:</h4>
+
+`[Service]`<br>
+`KillMode=process`
+
+<h4>In jupyterhub_config.py:</h4>
+
+`c.JupyterHub.cleanup_servers = False `
+
+<h4>Reload daemon:</h4>
+
+`$ sudo systemctl daemon-reload`
+
+<h4>Restart instance or service:</h4>
+
+`$ sudo systemctl enable servicename.service`
