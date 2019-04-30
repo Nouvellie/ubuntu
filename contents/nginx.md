@@ -1,7 +1,9 @@
-# NGINX
+<div>
 
-* Install nginx:
-$ sudo apt install nginx -y
+<h1>NGINX</h1>
+<h2>Install</h2>
+
+`$ sudo apt install nginx -y`
 
 * Install supervisor:
 sudo apt install supervisor -y
