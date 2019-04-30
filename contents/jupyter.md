@@ -76,6 +76,7 @@
 `c.LocalAuthenticator.group_whitelist = ['groupname']`
 
 <h4>Save changes and exit:</h4>
+
 `:wq!`
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
@@ -105,6 +106,10 @@
 `User=root`<br><br>
 `[Install]`<br>
 `WantedBy=multi-user.target`
+
+<h4>Save changes and exit:</h4>
+
+`:wq!`
 
 <h2>Enable server after connect</h2>
 <h4>In servicename.service:</h4>
