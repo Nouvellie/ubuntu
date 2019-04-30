@@ -1,9 +1,10 @@
-# UBUNTU COMMANDS
+<div>
 
-## Update, upgrade, clean and autoremove
-```
-$ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
-```
+<h1>UBUNTU COMMANDS</h1>
+<h2>Update, upgrade, clean and autoremove</h2>
+
+`$ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y`
+
 ## Delete
 * File/files:
 ```
