@@ -28,7 +28,7 @@
 `$ mkdir /opt/user-jupyterhub`<br>
 `$ conda activate jupyterbase`
 
-<h4>Generate jupyterhub sqlite and cookie_secret:</h4>
+<h4>Generate jupyterhub sqlite and cookie secret:</h4>
 
 `$ jupyterhub`
 
@@ -51,7 +51,7 @@
 
 <h4>Check group members:</h4>
 
-`$ sudo apt install members`<br>
+`$ sudo apt install members -y`<br>
 `$ members groupname`
 
 <h2>Set jupyterhub values</h2>
@@ -61,41 +61,37 @@
 
 <h4>Change the default settings:</h4>
 
-`$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`
+`$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`<br>
 
-c.JupyterHub.port = 443
-c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'
-c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'
-c.Spawner.cmd = ['jupyter-labhub']
-c.Spawner.default_url = '/lab'
-c.Spawner.notebook_dir = '~'
-c.Spawner.port = 443
-c.Authenticator.admin_users = ['adminuser']
-c.LocalAuthenticator.group_whitelist = ['groupname']
-```
-* Show conda environments in jupyterhub kernell:
-```
-$ conda install -c conda-forge nb_conda_kernels
-$ python -m ipykernel install --user --name jupyterbase --display-name "Python (jupyterbase)"
+`c.JupyterHub.port = 443`
+`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'`
+`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'`
+`c.Spawner.cmd = ['jupyter-labhub']`
+`c.Spawner.default_url = '/lab'`
+`c.Spawner.notebook_dir = '~'`
+`c.Spawner.port = 443`
+`c.Authenticator.admin_users = ['adminuser']`
+`c.LocalAuthenticator.group_whitelist = ['groupname']`
 
-```
+<h4>Show conda environments in jupyterhub kernell:</h4>
 
-## Errors
-* [Keyerror] User adminuser does not exist:
-```
-sudo rm -rf jupyterhub.sqlite
-```
+`$ conda install -c conda-forge nb_conda_kernels`<br>
+`$ python -m ipykernel install --user --name jupyterbase --display-name "Python (jupyterbase)"`
 
-## As system service (systemd)
-* Create service:
-```
-$ sudo touch /etc/systemd/system/servicename.service
-```
-* Configs:
-```
-$ sudo vim /etc/systemd/system/servicename.service
-```
-```
+<h2>Errors</h2>
+<h4>[Keyerror] User adminuser does not exist:</h4>
+
+`sudo rm -rf jupyterhub.sqlite`
+
+<h2>As system service (systemd)</h2>
+<h4>Create service:</h4>
+
+`$ sudo touch /etc/systemd/system/servicename.service`
+
+<h4>Configs:</h4>
+
+`$ sudo vim /etc/systemd/system/servicename.service`<br>
+
 [Unit]
 Description=Jupyterhub server
 
