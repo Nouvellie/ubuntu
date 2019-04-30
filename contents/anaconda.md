@@ -3,7 +3,8 @@
 <h1>ANACONDA</h1>
 <h2>Download</h2>
 
-`$ curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh`
+`$ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`
+
 <h2>Install</h2>
 <h4>Run bash:</h4>
 
