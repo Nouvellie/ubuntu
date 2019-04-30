@@ -23,7 +23,7 @@
 `$ git config credential.helper store`
 
 <h2>Reset fetch head</h2>
-<h4>If service dont update branch correctly:</h4>
+<h4>If the service doesn't update the branch correctly:</h4>
 
 `$ git fetch origin branch`<br>
 `$ git reset --hard FETCH_HEAD`<br>
@@ -42,12 +42,12 @@
 
 `$ git push -f origin branch`
 
-<h2>Git ignore</h2>
-<h4>Ignore only xml from root folder.</h4>
+<h2>Git ignore (example for xml files)</h2>
+<h4>Ignore only from root folder.</h4>
 
 `/*.xml`
 
-<h4>Ignore all the xml files. (rootfolder/subfolders)</h4>
+<h4>Ignore all the files. (rootfolder/subfolders)</h4>
 
 `**/*.xml`
 
