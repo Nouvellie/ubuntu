@@ -32,12 +32,12 @@
 `TEST="PATH"`<br>
 `TEST2="PATH2"`
 
-<h4>How to call a variable:</h4>
+<h4>Call a variable:</h4>
 
 `$ cd $TEST`<br>
 `$ cd $TEST2`
 
-<h2>Rename</h2>
+<h2>Rename files</h2>
 
 `$ sudo mv namefile newnamefile`
 
