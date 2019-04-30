@@ -25,11 +25,12 @@
 <h2>Create a jupyterhub dir (/opt/user-jupyterhub) and settings</h2>
 <h4>Install default files:</h4>
 
-`$ mkdir /opt/user-jupyterhub`<br>
-`$ conda activate jupyterbase`
+`$ mkdir /opt/user-jupyterhub`
 
 <h4>Generate jupyterhub sqlite and cookie secret:</h4>
 
+`$ cd /opt/user-jupyterhub`<br>
+`$ conda activate jupyterbase`<br>
 `$ jupyterhub`
 
 <h4>Create a jupyterhub config: (opt/user-jupyterhub/)</h4>
