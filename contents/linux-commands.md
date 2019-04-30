@@ -29,12 +29,12 @@
 
 <h4>Envs vars:</h4>
 
-`TEST="PATH"`
+`TEST="PATH"`<br>
 `TEST2="PATH2"`
 
 <h4>How to call a variable:</h4>
 
-`$ cd $TEST`
+`$ cd $TEST`<br>
 `$ cd $TEST2`
 
 <h2>Rename</h2>
