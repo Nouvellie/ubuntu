@@ -1,17 +1,19 @@
-# JUPYTER 
+<div>
 
-## Settings as root
-```
-$ sudo su
-cd
-```
-## Download and install Anaconda<br>
+<h1>JUPYTER</h1>
+<h2>Settings as root</h2>
+
+`$ sudo su`<br>
+`$ cd`
+
+<h2>Download and install Anaconda</h2>
+
 [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/anaconda.md)
 
-## Create an envs to run jupyterhub and our libraries (python3.6)
-```
-$ conda create --name jupyterbase python=3.6 -y
-```
+<h2>Create an envs to run jupyterhub and our libraries (python3.6)</h2>
+
+`$ conda create --name jupyterbase python=3.6 -y`
+
 ## Update conda
 ```
 $ conda update -n base -c defaults conda -y
