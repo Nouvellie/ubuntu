@@ -67,6 +67,6 @@
 
 <h2>More libs (conda install lib)</h2>
 
-[Anaconda packages link](https://anaconda.org/anaconda/repo)<br>
+Anaconda packages. [Link](https://anaconda.org/anaconda/repo)
 
 </div>
