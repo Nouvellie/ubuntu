@@ -36,8 +36,9 @@
 
 `$ jupyterhub --generate-config`
 
-<h2>Create jupyterhub cert and key: (/opt/user-jupyterhub/jupyterhub.key and /opt/user-jupyterhub/jupyterhub.crt)</h2>
+<h2>Create jupyterhub cert and key: (/opt/user-jupyterhub/cert/jupyterhub.key and /opt/user-jupyterhub/cert/jupyterhub.crt)</h2>
 
+`$ cd /opt/user-jupyterhub/cert`<br>
 `$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout jupyterhub.key -out jupyterhub.crt`
 
 <h2>Create and add user to a group</h2>
@@ -64,14 +65,15 @@
 `$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`<br>
 
 `c.JupyterHub.port = 443`<br>
-`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/jupyterhub.crt'`<br>
-`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/jupyterhub.key'`<br>
+`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/cert/jupyterhub.crt'`<br>
+`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/cert/jupyterhub.key'`<br>
 `c.Spawner.cmd = ['jupyter-labhub']`<br>
 `c.Spawner.default_url = '/lab'`<br>
 `c.Spawner.notebook_dir = '~'`<br>
-`c.Spawner.port = 443`<br>
-`c.Authenticator.admin_users = ['adminuser']`<br>
-`c.LocalAuthenticator.group_whitelist = ['groupname']`
+`c.Authenticator.admin_users = ['adminusername']`<br>
+`c.LocalAuthenticator.group_whitelist = ['groupname']`<br>
+
+<kbd>:</kbd> + <kbd>2</kbd> + <kbd>q</kbd> + <kbd>!</kbd>
 
 <h4>Show conda environments in jupyterhub kernell:</h4>
 
@@ -84,13 +86,9 @@
 `sudo rm -rf jupyterhub.sqlite`
 
 <h2>As system service (systemd)</h2>
-<h4>Create service:</h4>
+<h4>Create service and add settings:</h4>
 
-`$ sudo touch /etc/systemd/system/servicename.service`
-
-<h4>Configs:</h4>
-
-`$ sudo vim /etc/systemd/system/servicename.service`<br>
+`$ sudo vim /etc/systemd/system/user-jupyterhub.service`<br>
 
 [Unit]
 Description=Jupyterhub server
