@@ -18,7 +18,9 @@ settings/regions&languages
 </p>
 
 <p>
-select "manage installed languages and install them completely".
+
+select *"manage installed languages and install them completely"*.
+
 </p>
 
 <h2>Synaptic gdebi</h2>
@@ -59,7 +61,9 @@ Search, apply and install.
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 
 <p>
-Switch to ON and click install.
+
+Switch to **ON** and click *install*.
+
 </p>
 
 <h4>Restarts GNOME Shell:</h4>
