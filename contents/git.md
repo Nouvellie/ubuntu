@@ -12,11 +12,15 @@
 
 <h4>Username: </h4>
 
-`username@mail.com`
+<p>
+username@mail.com
+</p>
 
 <h4>Password:</h4>
 
-`password123456`
+</p>
+password123456
+</p>
 
 <h2>Credential store</h2>
 
