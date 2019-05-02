@@ -45,7 +45,7 @@
 
 `$ sudo apt-get install chrome-gnome-shell -y`
 
-<h4>Second:</h4><br><br>
+<h4>Second:</h4>
 
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 
