@@ -20,7 +20,7 @@
 
 <p>
 
-You can also exit Vim directly from **"Normal mode"** by typing *ZZ* to save and quit (same as *:x*) or *ZQ* to just quit (same as *:q!*). (Note that case is important here. *ZZ* and *zz* do not mean the same thing.)
+You can also exit Vim directly from **normal mode** by typing *ZZ* to save and quit (same as *:x*) or *ZQ* to just quit (same as *:q!*). (Note that case is important here. *ZZ* and *zz* do not mean the same thing.)
 
 </p>
 <p>
