@@ -7,7 +7,6 @@
 `$ sudo apt install mysql-server -y`
 
 <h2>Create database</h2>
-
 <h4>Create:</h4>
 
 `mysql> CREATE DATABASE IF NOT EXISTS namedb;`
