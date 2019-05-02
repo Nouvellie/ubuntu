@@ -43,9 +43,9 @@ Provides enhancements to the operations on Sidebar of Files and Folders.
 
 <h4>Material theme:</h4>
 
-01. This theme brings the Material Design visual language to your Sublime Text 3.
+1. This theme brings the Material Design visual language to your Sublime Text 3.
 
-02. Config material theme:
+2. Config material theme:
 
 - Accent: Indigo.
 - Color scheme: Palenight.
