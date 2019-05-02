@@ -97,16 +97,20 @@
 
 <h4>[user-jupyterhub.service]</h4>
 
-`[Unit]`<br>
-`Description=Jupyterhub server`<br><br>
-`[Service]`<br>
-`Environment="PATH=/opt/anaconda3/envs/jupyterbase/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"`<br>
-`ExecStart=/opt/anaconda3/envs/jupyterbase/bin/jupyterhub`<br>
-`WorkingDirectory=/opt/user-jupyterhub`<br>
-`Restart=on-failure`<br>
-`User=root`<br><br>
-`[Install]`<br>
-`WantedBy=multi-user.target`
+```
+[Unit]
+Description=Jupyterhub server
+
+[Service]
+Environment="PATH=/opt/anaconda3/envs/jupyterbase/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+ExecStart=/opt/anaconda3/envs/jupyterbase/bin/jupyterhub
+WorkingDirectory=/opt/user-jupyterhub
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
 
 <h4>Save changes and exit:</h4>
 
