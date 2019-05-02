@@ -9,7 +9,7 @@
 <h4>Install package control:</h4>
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd><br>
-`Install package control.`
+`Access to install package control.`
 
 <h2>Package Control: Install Package</h2>
 <h4>Pep8:</h4>
