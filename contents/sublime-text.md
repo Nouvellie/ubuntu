@@ -18,26 +18,32 @@ Access to install package control.
 <h2>Package Control: Install Package</h2>
 <h4>Pep8:</h4>
 
-`Style Guide for Python Code.`
+<p>
+Style Guide for Python Code.
+</p>
 
 <h4>Sublime Code Intel:</h4>
 
-```
+<p>
 A full-featured code intelligence and smart autocomplete engine for Sublime Text.
 (JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.)
-```
+</p>
 
 <h4>Emmet:</h4>
 
-`Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow.`
+<p>
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow.
+</p>
 
 <h4>Sidebar enhancements:</h4>
 
-`Provides enhancements to the operations on Sidebar of Files and Folders.`
+<p>
+Provides enhancements to the operations on Sidebar of Files and Folders.
+</p>
 
 <h4>Material theme:</h4>
 
-```
+<p>
 01. This theme brings the Material Design visual language to your Sublime Text 3.
 02. Config material theme:
 	-Accent: Indigo.
@@ -46,6 +52,6 @@ A full-featured code intelligence and smart autocomplete engine for Sublime Text
 	-Tabs: Bold, small and autowidth.
 	-Sidebar: Compact sidebar, arrow folder and big fileicons.
 	-Panels: Bright scrollbar, contrast mode, small status bar.
-```
+</p>
 
 </div>
