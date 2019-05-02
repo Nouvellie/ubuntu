@@ -37,7 +37,7 @@ Emmet is a plugin for many popular text editors which greatly improves HTML & CS
 
 <h4>Sidebar enhancements:</h4>
 
-Provides enhancements to the operations on Sidebar of Files and Folders.
+ Provides enhancements to the operations on Sidebar of Files and Folders.
 
 <h4>Material theme:</h4>
 
