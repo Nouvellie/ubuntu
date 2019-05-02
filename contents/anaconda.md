@@ -23,13 +23,18 @@
 <h4>Path:</h4>
 
 <p>
-/opt/anaconda3
+
+
+*/opt/anaconda3*
+
 </p>
 
 <h4>Do you wish the installer to initialize Anaconda3:</h4>
 
 <p>
-yes (important)
+
+*yes (important)*
+
 </p>
 
 </p>
@@ -90,7 +95,9 @@ PATH=/opt/anaconda3/bin:PATH
 <h2>More libs (conda install lib)</h2>
 
 <p>
+
 [Anaconda packages.](https://anaconda.org/anaconda/repo)
+
 </p>
 
 </div>
