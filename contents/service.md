@@ -36,8 +36,8 @@ Access to blocked ports, in this case port 80.
 
 <h2>Start / Restart / Stop</h2>
 
-`$ sudo systemctl restart servicename.service`<br>
 `$ sudo systemctl start servicename.service`<br>
+`$ sudo systemctl restart servicename.service`<br>
 `$ sudo systemctl stop servicename.service`
 
 <h2>Turns the service on, on the next reboot or on the next start event. (It persists after reboot)</h2>
