@@ -1,5 +1,5 @@
 <div>
-<h1>CONTENTS</h1> `226666`
+<h1>CONTENTS</h1>
 
 - [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
 - [Database.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/database.md)
@@ -13,7 +13,7 @@
 - [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
 
 </div>
-
+<br><br>
 <p align="center">
 
 <img src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" width="60%" class="center" alt="Ubuntu Logo">
