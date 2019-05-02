@@ -20,7 +20,9 @@ yes
 
 <h4>Path:</h4>
 
-`/opt/anaconda3`
+<p>
+/opt/anaconda3
+</p>
 
 <h4>Do you wish the installer to initialize Anaconda3:</h4>
 
