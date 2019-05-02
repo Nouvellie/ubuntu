@@ -13,13 +13,17 @@
 <h4>Username: </h4>
 
 <p>
-username@mail.com
+
+*username@@mail.com*
+
 </p>
 
 <h4>Password:</h4>
 
 </p>
-password123456
+
+*password123456*
+
 </p>
 
 <h2>Credential store</h2>
