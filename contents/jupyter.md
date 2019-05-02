@@ -137,14 +137,18 @@ RestartSec=10
 ```
 
 <h2>JupyterHub config to be respected by systemd:</h2>
-<h4>In user-jupyterhub.service:</h4>
+<h4>[user-jupyterhub.service]</h4>
 
-`[Service]`<br>
-`KillMode=process`
+```
+[Service]
+KillMode=process
+```
 
 <h4>[jupyterhub_config.py]</h4>
 
-`c.JupyterHub.cleanup_servers = False `
+```
+c.JupyterHub.cleanup_servers = False
+```
 
 <h4>Reload daemon:</h4>
 
