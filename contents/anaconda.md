@@ -41,7 +41,9 @@
 
 <h4>[environmnet]</h4>
 
-`PATH=/opt/anaconda3/bin:PATH`
+```
+PATH=/opt/anaconda3/bin:PATH
+```
 
 <h2>Create an envs</h2>
 <h4>Default:</h4>
