@@ -19,7 +19,7 @@
 
 </p>
 
-<p style="align-content: right>
+<p style="align-content: right">
 
 *Created by Nouvellie, 2019/04/04*
 
