@@ -1,6 +1,6 @@
 <div>
 
-<h1>JUPYTER</h1>
+<h1>JUPYTER HUB/LAB</h1>
 <h2>Settings as root</h2>
 
 `$ sudo su`<br>
