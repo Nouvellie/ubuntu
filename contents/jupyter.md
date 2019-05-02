@@ -67,14 +67,16 @@
 
 <h4>[jupyterhub_config.py]</h4>
 
-`c.JupyterHub.port = 443`<br>
-`c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/cert/jupyterhub.crt'`<br>
-`c.JupyterHub.ssl_key = '/opt/user-jupyterhub/cert/jupyterhub.key'`<br>
-`c.Spawner.cmd = ['jupyter-labhub']`<br>
-`c.Spawner.default_url = '/lab'`<br>
-`c.Spawner.notebook_dir = '~'`<br>
-`c.Authenticator.admin_users = ['adminusername']`<br>
-`c.LocalAuthenticator.group_whitelist = ['groupname']`
+```
+c.JupyterHub.port = 443
+c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/cert/jupyterhub.crt'
+c.JupyterHub.ssl_key = '/opt/user-jupyterhub/cert/jupyterhub.key'
+c.Spawner.cmd = ['jupyter-labhub']
+c.Spawner.default_url = '/lab'
+c.Spawner.notebook_dir = '~'
+c.Authenticator.admin_users = ['adminusername']
+c.LocalAuthenticator.group_whitelist = ['groupname']
+```
 
 <h4>Save changes and exit:</h4>
 
