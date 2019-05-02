@@ -87,6 +87,8 @@ PATH=/opt/anaconda3/bin:PATH
 
 <h2>More libs (conda install lib)</h2>
 
+<p>
 [Anaconda packages.](https://anaconda.org/anaconda/repo)
+</p>
 
 </div>
