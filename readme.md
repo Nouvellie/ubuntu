@@ -19,9 +19,13 @@
 
 </p>
 
-<p style="text-align: right;">
+<p>
+
+<h5>
 
 *Created by Nouvellie, 2019/04/04*
+
+</h5>
 
 </p>
 
