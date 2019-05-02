@@ -14,7 +14,7 @@
 
 </div>
 
-<div>
+<div class="center">
 
 <img src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" width="80%" class="center" alt="Ubuntu Logo">
 
