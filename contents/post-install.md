@@ -14,7 +14,7 @@ In software & updates check the canonical partners box.
 <h2>Language</h2>
 
 <p>
-settings/regions&languages`
+settings/regions&languages
 </p>
 
 <p>
@@ -32,7 +32,9 @@ select "manage installed languages and install them completely".
 
 <h4>FFmpeg:</h4>
 
-`Search, apply and install.`
+<p>
+Search, apply and install.
+</p>
 
 <h2>Gnome tweak tool</h2>
 <h4>Install:</h4>
