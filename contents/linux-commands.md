@@ -27,10 +27,12 @@
 
 `$ sudo vim /etc/environment`
 
-<h4>Envs vars:</h4>
+<h4>[environment]</h4>
 
-`TEST="PATH"`<br>
-`TEST2="PATH2"`
+```
+TEST="PATH"
+TEST2="PATH2"
+```
 
 <h4>Call a variable:</h4>
 
