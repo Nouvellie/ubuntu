@@ -10,9 +10,13 @@
 
 `$ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh`
 
+<p>
+
 <kbd>ENTER</kbd><br>
 
-`yes`
+<p>
+yes
+</p>
 
 <h4>Path:</h4>
 
@@ -20,8 +24,11 @@
 
 <h4>Do you wish the installer to initialize Anaconda3:</h4>
 
-`yes (important)`
+<p>
+yes (important)
+</p>
 
+</p>
 <h2>Envs list</h2>
 
 `$ conda info --envs`
