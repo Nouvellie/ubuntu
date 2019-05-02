@@ -3,13 +3,17 @@
 <h1>SUBLIME TEXT</h1>
 <h2>Ubuntu software</h2>
 
-`Search and install.`
+<p>
+Search and install.
+</p>
 
 <h2>Packages</h2>
 <h4>Install package control:</h4>
 
+<p>
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd><br>
-`Access to install package control.`
+Access to install package control.
+</p>
 
 <h2>Package Control: Install Package</h2>
 <h4>Pep8:</h4>
