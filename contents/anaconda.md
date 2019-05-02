@@ -33,8 +33,15 @@
 
 `$ conda update -n base -c defaults conda`
 
-<h2>Create an envs</h2>
+<h2>To access conda commands with any user</h2>
+<h4>Edit environment:</h4>
+'$ sudo vim /etc/environment'
 
+<h4>[environmnet]</h4>
+
+`PATH=/opt/anaconda3/bin:PATH`
+
+<h2>Create an envs</h2>
 <h4>Default:</h4>
 
 `$ conda create --name envsname python=3.6 -y`
