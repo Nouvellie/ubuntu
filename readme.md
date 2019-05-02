@@ -12,7 +12,10 @@
 - [Sublime text.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/sublime-text.md)
 - [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
 
-<br><br><br>
+</div>
+
+<div>
+
 ![alt text](https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png)
 
 </div>
