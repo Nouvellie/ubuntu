@@ -18,8 +18,10 @@
 
 <h4>Sublime Code Intel:</h4>
 
-`A full-featured code intelligence and smart autocomplete engine for Sublime Text.
-(JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.)`
+```
+A full-featured code intelligence and smart autocomplete engine for Sublime Text.
+(JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.)
+```
 
 <h4>Emmet:</h4>
 
