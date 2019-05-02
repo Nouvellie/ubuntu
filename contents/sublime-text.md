@@ -31,13 +31,15 @@
 
 <h4>Material theme:</h4>
 
-`01. This theme brings the Material Design visual language to your Sublime Text 3.
+```
+01. This theme brings the Material Design visual language to your Sublime Text 3.
 02. Config material theme:
 	-Accent: Indigo.
 	-Color scheme: Palenight.
 	-Theme: Darker.
 	-Tabs: Bold, small and autowidth.
 	-Sidebar: Compact sidebar, arrow folder and big fileicons.
-	-Panels: Bright scrollbar, contrast mode, small status bar.`
+	-Panels: Bright scrollbar, contrast mode, small status bar.
+```
 
 </div>
