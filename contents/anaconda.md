@@ -15,7 +15,9 @@
 <kbd>ENTER</kbd><br>
 
 <p>
-yes
+
+*yes*
+
 </p>
 
 <h4>Path:</h4>
