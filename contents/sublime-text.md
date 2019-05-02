@@ -47,14 +47,13 @@ Provides enhancements to the operations on Sidebar of Files and Folders.
 01. This theme brings the Material Design visual language to your Sublime Text 3.
 <br>
 02. Config material theme:<br>
-```
-	-Accent: Indigo.
-	-Color scheme: Palenight.
-	-Theme: Darker.
-	-Tabs: Bold, small and autowidth.
-	-Sidebar: Compact sidebar, arrow folder and big fileicons.
-	-Panels: Bright scrollbar, contrast mode, small status bar.
-```
+- Accent: Indigo.
+- Color scheme: Palenight.
+- Theme: Darker.
+- Tabs: Bold, small and autowidth.
+- Sidebar: Compact sidebar, arrow folder and big fileicons.
+- Panels: Bright scrollbar, contrast mode, small status bar.
+
 </p>
 
 </div>
