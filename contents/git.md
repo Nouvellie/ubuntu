@@ -14,7 +14,7 @@
 
 <p>
 
-*username@@mail.com*
+*username/email*
 
 </p>
 
