@@ -7,12 +7,19 @@
 
 <h2>Canonical partners</h2>
 
-`In software & updates check the canonical partners box.`
+<p>
+In software & updates check the canonical partners box.
+</p>
 
 <h2>Language</h2>
 
-`settings/regions&languages`<br>
-`select "manage installed languages and install them completely".`
+<p>
+settings/regions&languages`
+</p>
+
+<p>
+select "manage installed languages and install them completely".
+</p>
 
 <h2>Synaptic gdebi</h2>
 <h4>Install:</h4>
@@ -49,7 +56,9 @@
 
 [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-`Switch to ON and click install.`
+<p>
+Switch to ON and click install.
+</p>
 
 <h4>Restarts GNOME Shell:</h4>
 <kbd>Alt</kbd> + <kbd>F2</kbd><br>

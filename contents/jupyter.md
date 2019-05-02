@@ -8,7 +8,9 @@
 
 <h2>Download and install Anaconda</h2>
 
+<p>
 [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
+</p>
 
 <h2>Update conda</h2>
 
