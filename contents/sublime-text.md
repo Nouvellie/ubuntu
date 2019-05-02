@@ -8,7 +8,8 @@
 <h2>Packages</h2>
 <h4>Install package control:</h4>
 
-`Press 'ctrl + shift + P' and click 'install package control'.`
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd><br>
+`Install package control'.`
 
 <h2>Package Control: Install Package</h2>
 <h4>Pep8:</h4>
