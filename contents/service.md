@@ -1,11 +1,13 @@
-# SERVICE
+<div>
 
-## Create
-```
-$ sudo touch servicename.service 
-```
-## Settings
-* Example of a django project:
+<h1>SERVICE</h1>
+<h2>Create</h2>
+
+`$ sudo touch servicename.service`
+
+<h2>Settings</h2>
+<h4>Example of a django project:</h4>
+
 ```
 [Unit]
 Description=Django Server
@@ -20,12 +22,16 @@ User=ubuntu
 [Install]
 WantedBy=multi-user.target
 ```
-* Authbin:
-```
-Access to blocked ports, in this case port 80.
-```
+
+<h4>Authbin:</h4>
+
+<p>
+Access to blocked ports, in this case port 80.	
+</p>
+
+
 ## Reload to update changes
-```
+
 $ sudo systemctl daemon-reload
 ```
 ## Start / Restart / Stop
