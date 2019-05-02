@@ -44,11 +44,11 @@ Provides enhancements to the operations on Sidebar of Files and Folders.
 <h4>Material theme:</h4>
 
 <p>
-1. This theme brings the Material Design visual language to your Sublime Text 3.
+I. This theme brings the Material Design visual language to your Sublime Text 3.
 </p>
 
 <p>
-2. Config material theme:
+II. Config material theme:
 </p>
 
 - Accent: Indigo.
