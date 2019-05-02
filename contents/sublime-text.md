@@ -43,9 +43,7 @@ Provides enhancements to the operations on Sidebar of Files and Folders.
 
 <h4>Material theme:</h4>
 
-<p>
 01. This theme brings the Material Design visual language to your Sublime Text 3.
-</p>
 
 02. Config material theme:
 
