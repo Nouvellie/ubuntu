@@ -97,7 +97,7 @@
 
 <h4>[user-jupyterhub.service]</h4>
 
-```
+`
 [Unit]
 Description=Jupyterhub server
 
@@ -110,7 +110,7 @@ User=root
 
 [Install]
 WantedBy=multi-user.target
-```
+`
 
 <h4>Save changes and exit:</h4>
 
