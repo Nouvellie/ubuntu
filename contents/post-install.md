@@ -52,6 +52,7 @@
 `Switch to ON and click install.`
 
 <h4>Restarts GNOME Shell:</h4>
-<kbd>Alt</kbd> + <kbd>F2</kbd> + <kbd>r</kbd> + <kbd>ENTER</kbd>
+<kbd>Alt</kbd> + <kbd>F2</kbd><br>
+<kbd>r</kbd> + <kbd>ENTER</kbd>
 
 </div>
