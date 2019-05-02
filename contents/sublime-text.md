@@ -37,13 +37,19 @@ Emmet is a plugin for many popular text editors which greatly improves HTML & CS
 
 <h4>Sidebar enhancements:</h4>
 
- Provides enhancements to the operations on Sidebar of Files and Folders.
+<p>
+Provides enhancements to the operations on Sidebar of Files and Folders.
+</p>
 
 <h4>Material theme:</h4>
 
+<p>
 1. This theme brings the Material Design visual language to your Sublime Text 3.
+</p>
 
+<p>
 2. Config material theme:
+</p>
 
 - Accent: Indigo.
 - Color scheme: Palenight.
