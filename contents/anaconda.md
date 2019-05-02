@@ -10,7 +10,7 @@
 
 `$ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh`
 
-<kbd>ENTER</kbd><br><br>
+<kbd>ENTER</kbd><br>
 
 `yes`
 
