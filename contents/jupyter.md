@@ -121,16 +121,20 @@ WantedBy=multi-user.target
 `:wq!`
 
 <h2>Enable server after connect</h2>
-<h4>In suser-jupyterhub.service:</h4>
+<h4>[user-jupyterhub.service]</h4>
 
-`[Unit]`<br>
-`After=syslog.target network.target`
+```
+[Unit]
+After=syslog.target network.target
+```
 
 <h2>Auto restart</h2>
-<h4>In user-jupyterhub.service:</h4>
+<h4>[user-jupyterhub.service]</h4>
 
-`Restart=always`<br>
-`RestartSec=10`
+```
+Restart=always
+RestartSec=10
+```
 
 <h2>JupyterHub config to be respected by systemd:</h2>
 <h4>In user-jupyterhub.service:</h4>
