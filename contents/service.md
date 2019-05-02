@@ -30,28 +30,25 @@ Access to blocked ports, in this case port 80.
 </p>
 
 
-## Reload to update changes
+<h2>Reload to update changes</h2>
 
-$ sudo systemctl daemon-reload
-```
-## Start / Restart / Stop
-```
-$ sudo systemctl restart servicename.service
-```
-```
-$ sudo systemctl start servicename.service
-```
-```
-$ sudo systemctl stop servicename.service
-```
-## Turns the service on, on the next reboot or on the next start event. (It persists after reboot)
-```
-$ sudo systemctl enable servicename.service
-```
-## Access (Byport 80)
-```
-$ sudo apt install authbind
-$ sudo touch /etc/authbind/byport/80
-$ sudo chown ubuntu /etc/authbind/byport/80
-$ sudo chmod 500 /etc/authbind/byport/80
-```
+`$ sudo systemctl daemon-reload`
+
+<h2>Start / Restart / Stop</h2>
+
+`$ sudo systemctl restart servicename.service`<br>
+`$ sudo systemctl start servicename.service`<br>
+`$ sudo systemctl stop servicename.service`
+
+<h2>Turns the service on, on the next reboot or on the next start event. (It persists after reboot)</h2>
+
+`$ sudo systemctl enable servicename.service`
+
+<h2>Access (Byport 80)</h2>
+
+`$ sudo apt install authbind`<br>
+`$ sudo touch /etc/authbind/byport/80`<br>
+`$ sudo chown ubuntu /etc/authbind/byport/80`<br>
+`$ sudo chmod 500 /etc/authbind/byport/80`
+
+</div>
