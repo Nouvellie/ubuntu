@@ -52,4 +52,8 @@ TEST2="PATH2"
 
 `$ sudo dmidecode | grep -A 9 "System Information"`
 
+<h2>Display current time & data setting</h2>
+
+`$ sudo hwclock --show`
+
 </div>
