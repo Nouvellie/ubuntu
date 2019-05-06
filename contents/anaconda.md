@@ -92,6 +92,15 @@ PATH=/opt/anaconda3/bin:PATH
 
 `$ conda deactivate`
 
+<h2>Install envs in a specific directory</h2>
+<h4>Add directory to conda</h4>
+
+`$ conda config --append envs_dirs /home/user/project/env`
+
+<h4>Create conda env in the specific directory</h4>
+
+`$ conda create --prefix /home/user/project/env/envsname python=3.6 -y`
+
 <h2>More libs (conda install lib)</h2>
 
 <p>
