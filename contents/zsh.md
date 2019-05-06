@@ -31,6 +31,12 @@ ZSH_THEME="essembeh"
 
 `$ sudo cp -r /home/cdn-devs/.zshrc /root`
 
+<h2>Activate Zsh</h2>
+
+`
+$ chsh -s `which zsh`
+`
+
 <h2>Upgrade</h2>
 
 `$ upgrade_oh_my_zsh`
