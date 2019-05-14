@@ -41,4 +41,13 @@ $ chsh -s `which zsh`
 
 `$ upgrade_oh_my_zsh`
 
+<h2>Add Zsh shell to all the users</h2>
+<h4>Zshrc export:</h4>
+
+`$ for i in user1 user2 user3 user4 userX; do cp .zshrc /home/${i}; chown ${i} /home/${i}/.zshrc; done`
+
+<h4>Active Zsh shell</h4>
+
+`$ for i in user1 user2 user3 user4 userX; do chsh --shell=`which zsh` ${i}; done`
+
 </div>
