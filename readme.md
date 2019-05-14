@@ -11,6 +11,7 @@
 - [Service.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/service.md)
 - [Sublime text.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/sublime-text.md)
 - [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
+- [Zsh.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/zsh.md)
 
 <br><br>
 <p align="center">
