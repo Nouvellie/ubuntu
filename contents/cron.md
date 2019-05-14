@@ -39,7 +39,7 @@ done
 
 <p>
 At 09:00 on Sunday.
-</p><br>
+</p>
 
 ```
 0 9 * * 0 root sudo bash /opt/bash/script/update.sh
@@ -66,7 +66,7 @@ done
 
 <p>
 At 09:00 on every day-of-week from Sunday through Saturday.
-</p><br>
+</p>
 
 ```
 0 9 * * 0-6 root sudo bash /opt/bash/script/clean.sh
