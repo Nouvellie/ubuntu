@@ -28,7 +28,7 @@
 
 <h2>Credential store</h2>
 
-`$ git config credential.helper store`
+`$ sudo chown -Rc $UID .git/ && git config credential.helper store && git pull`
 
 <h2>Reset fetch head</h2>
 <h4>If the service doesn't update the branch correctly:</h4>
