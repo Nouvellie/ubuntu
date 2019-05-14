@@ -82,7 +82,7 @@ server {
         server_name hosting-IP; # (example 2.222.222.222)
         location = /favicon.ico { access_log off; log_not_found off; }
         location /static/ {
-                root /home/user/django-project/project-name
+                root /home/user/django-project/project-name;
         }
         location / {
                 include proxy_params;
