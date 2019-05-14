@@ -12,7 +12,7 @@
 0 9 1 * * root sudo bash /opt/bash/script/log.sh
 ```
 
-<h4>Code for nginx access/error:</h4>
+<h4>Code for Nginx access/error:</h4>
 
 ```
 #!/bin/bash
