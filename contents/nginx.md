@@ -102,4 +102,10 @@ server {
 `$ sudo ufw delete allow 8000`<br>
 `$ sudo ufw allow 'Nginx Full'`
 
+<h2>Restart gunicorn and all is ready</h2>
+
+`$ sudo systemctl restart gunicorn`
+
+<h2>P.S. Django must have a collectstatic to render correctly</h2>
+
 </div>
