@@ -14,7 +14,7 @@
 - [Zsh.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/zsh.md)
 
 <p align="center">
-  <img width="460" height="300" src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" alt="Ubuntu Logo">
+  <img width="100%" height="100%" src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" alt="Ubuntu Logo">
 </p>
 
 
