@@ -1,5 +1,4 @@
-<div>
-<h1>CONTENTS</h1>
+# CONTENTS
 
 - [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
 - [Cron.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/cron.md)
@@ -14,21 +13,9 @@
 - [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
 - [Zsh.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/zsh.md)
 
-<br><br>
 <p align="center">
-
-<img src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" width="60%" class="center" alt="Ubuntu Logo">
-
+  <img width="460" height="300" src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" alt="Ubuntu Logo">
 </p>
-<br><br><br>
-<p>
 
-<h5>
 
 *Created by Nouvellie, 2019/04/04*
-
-</h5>
-
-</p>
-
-</div>
