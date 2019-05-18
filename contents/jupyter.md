@@ -76,57 +76,69 @@ $ sudo apt install members -y
 $ members <groupname>
 ```
 
-Set jupyterhub values</h2>
-<h4>Install the jupyter lab/hub extension:</h4>
+## Set jupyterhub values
+#### Install the jupyter lab/hub extension:
 
-`$ jupyter labextension install @jupyterlab/hub-extension`
-
-<h4>Change the default settings:</h4>
-
-`$ sudo vim /opt/user-jupyterhub/jupyterhub_config.py`<br>
-
-<h4>[jupyterhub_config.py]</h4>
-
+```sh
+$ jupyter labextension install @jupyterlab/hub-extension
 ```
+
+#### Change the default settings:
+
+```sh
+$ sudo vim /opt/<user>-jupyterhub/jupyterhub_config.py
+```
+
+#### [jupyterhub_config.py]
+
+```python
 c.JupyterHub.port = 443
-c.JupyterHub.ssl_cert = '/opt/user-jupyterhub/cert/jupyterhub.crt'
-c.JupyterHub.ssl_key = '/opt/user-jupyterhub/cert/jupyterhub.key'
+c.JupyterHub.ssl_cert = '/opt/<user>-jupyterhub/cert/jupyterhub.crt'
+c.JupyterHub.ssl_key = '/opt/<user>-jupyterhub/cert/jupyterhub.key'
 c.Spawner.cmd = ['jupyter-labhub']
 c.Spawner.default_url = '/lab'
 c.Spawner.notebook_dir = '~'
-c.Authenticator.admin_users = ['adminusername']
-c.LocalAuthenticator.group_whitelist = ['groupname']
+c.Authenticator.admin_users = ['<adminusername>']
+c.LocalAuthenticator.group_whitelist = ['<groupname>']
 ```
 
-<h4>Save changes and exit:</h4>
+#### Save changes and exit:
 
-`:wq!`
-
-<h4>Show conda environments in jupyterhub kernell:</h4>
-
-`$ conda install -c conda-forge nb_conda_kernels`<br>
-`$ python -m ipykernel install --user --name jupyterbase --display-name "Python (jupyterbase)"`
-
-<h2>Errors</h2>
-<h4>[Keyerror] User adminuser does not exist:</h4>
-
-`$ sudo rm -rf jupyterhub.sqlite`
-
-<h2>As system service (systemd)</h2>
-<h4>Create service and add settings:</h4>
-
-`$ sudo vim /etc/systemd/system/user-jupyterhub.service`<br>
-
-<h4>[user-jupyterhub.service]</h4>
-
+```sh
+:wq!
 ```
+
+#### Show conda environments in jupyterhub kernell:
+
+```sh
+$ conda install -c conda-forge nb_conda_kernels
+$ python -m ipykernel install --user --name <jupyterbase> --display-name "Python (<jupyterbase>)"
+```
+
+## Errors
+#### [Keyerror] User adminuser does not exist:
+
+```sh
+$ sudo rm -rf jupyterhub.sqlite
+```
+
+## As system service (systemd)
+#### Create service and add settings:
+
+```sh
+$ sudo vim /etc/systemd/system/<user>-jupyterhub.service
+```
+
+#### [<user>-jupyterhub.service]
+
+```sh
 [Unit]
 Description=Jupyterhub Service
 
 [Service]
-Environment="PATH=/opt/anaconda3/envs/jupyterbase/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-ExecStart=/opt/anaconda3/envs/jupyterbase/bin/jupyterhub
-WorkingDirectory=/opt/user-jupyterhub
+Environment="PATH=/opt/anaconda3/envs/<jupyterbase>/bin:/opt/anaconda3/bin:/opt/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+ExecStart=/opt/anaconda3/envs/<jupyterbase>/bin/jupyterhub
+WorkingDirectory=/opt/<user>-jupyterhub
 Restart=on-failure
 User=root
 
@@ -134,52 +146,58 @@ User=root
 WantedBy=multi-user.target
 ```
 
-<h4>Save changes and exit:</h4>
+#### Save changes and exit:
 
-`:wq!`
-
-<h2>Enable server after connect</h2>
-<h4>[user-jupyterhub.service]</h4>
-
+```sh
+:wq!
 ```
+
+## Enable server after connect
+#### [<user>-jupyterhub.service]
+
+```sh
 [Unit]
 After=syslog.target network.target
 ```
 
-<h2>Auto restart</h2>
-<h4>[user-jupyterhub.service]</h4>
+## Auto restart
+#### [<user>-jupyterhub.service]
 
-```
+```sh
 Restart=always
 RestartSec=10
 ```
 
-<h2>JupyterHub config to be respected by systemd:</h2>
-<h4>[user-jupyterhub.service]</h4>
+## JupyterHub config to be respected by systemd:
+#### [<user>-jupyterhub.service]
 
-```
+```sh
 [Service]
 KillMode=process
 ```
 
-<h4>[jupyterhub_config.py]</h4>
+#### [jupyterhub_config.py]
 
-```
+```python
 c.JupyterHub.cleanup_servers = False
 ```
 
-<h4>Reload daemon:</h4>
+#### Reload daemon:
 
-`$ sudo systemctl daemon-reload`
+```sh
+$ sudo systemctl daemon-reload
+```
 
-<h4>Restart instance or service:</h4>
+#### Restart instance or service:
 
-`$ sudo systemctl enable user-jupyterhub.service`
+```sh
+$ sudo systemctl enable <user>-jupyterhub.service
+```
 
-<h4>Start / Restart / Stop:</h4>
+#### Start / Restart / Stop:
 
-`$ sudo systemctl start user-jupyterhub.service`<br>
-`$ sudo systemctl restart user-jupyterhub.service`<br>
-`$ sudo systemctl stop user-jupyterhub.service`
-
-</div>
+```sh
+$ sudo systemctl start user-jupyterhub.service
+$ sudo systemctl restart user-jupyterhub.service
+$ sudo systemctl stop user-jupyterhub.service
+```
