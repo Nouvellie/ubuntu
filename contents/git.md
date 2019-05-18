@@ -64,3 +64,12 @@
 ```
 
 </div>
+
+Turn a GitHub repository containing Sphinx-Gallery scripts into a live notebook repository with [Binder](https://mybinder.org/) and Jupytext by adding only two files to the repo:
+- `binder/requirements.txt`, a list of the required packages (including `jupytext`)
+- `.jupyter/jupyter_notebook_config.py` with the following contents:
+```python
+c.NotebookApp.contents_manager_class = "jupytext.TextFileContentsManager"
+c.ContentsManager.preferred_jupytext_formats_read = "py:sphinx"
+c.ContentsManager.sphinx_convert_rst2md = True
+```
