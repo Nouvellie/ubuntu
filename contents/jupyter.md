@@ -6,63 +6,77 @@ $ sudo su
 $ cd
 ```
 
-<h2>Download and install Anaconda</h2>
-
-<p>
+## Download and install Anaconda
 
 [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
 
-</p>
+## Update conda
 
-<h2>Update conda</h2>
-
-`$ conda update -n base -c defaults conda -y`
-
-<h2>Create an envs to run jupyterhub and our libraries (python3.6)</h2>
-
-`$ conda create --name jupyterbase python=3.6 -y`
-
-<h2>Conda libs</h2>
-
+```sh
+$ conda update -n base -c defaults conda -y
 ```
+
+## Create an envs to run jupyterhub and our libraries (python3.6)
+
+```sh
+$ conda create --name <jupyterbase> python=3.6 -y
+```
+
+## Conda libs
+
+```sh
 $ conda install -c conda-forge mysql-connector-python -y && conda install -c pandas pymysql -y && conda install -c conda-forge mysqlclient -y && conda install -c kalefranz mysql-server -y && conda install -c conda-forge django -y && conda install -c conda-forge djangorestframework -y && conda install -c conda-forge keras -y && conda install -c anaconda tensorflow -y && conda install -c conda-forge django-cors-headers -y && conda install -c conda-forge django-filter -y && conda install -c conda-forge pandas -y && conda install -c conda-forge bokeh -y && conda install -c conda-forge appdirs -y && conda install -c conda-forge lxml -y && conda install -c conda-forge wfdb -y && conda install -c conda-forge pywavelets -y && conda install -c conda-forge sqlparse -y && conda install -c conda-forge jupyterhub -y && conda install -c conda-forge notebook -y && conda install -c conda-forge configurable-http-proxy -y && conda install -c conda-forge jupyterlab -y
+ ```
+
+## Create a jupyterhub dir (/opt/user-jupyterhub) and settings
+#### Install default files:
+
+```sh
+$ mkdir /opt/<user>-jupyterhub
 ```
 
-<h2>Create a jupyterhub dir (/opt/user-jupyterhub) and settings</h2>
-<h4>Install default files:</h4>
+#### Generate jupyterhub sqlite and cookie secret:
 
-`$ mkdir /opt/user-jupyterhub`
+```sh
+$ cd /opt/<user>-jupyterhub
+$ conda activate <jupyterbase>
+$ jupyterhub
+```
 
-<h4>Generate jupyterhub sqlite and cookie secret:</h4>
+#### Create a jupyterhub config: (opt/user-jupyterhub/)
 
-`$ cd /opt/user-jupyterhub`<br>
-`$ conda activate jupyterbase`<br>
-`$ jupyterhub`
+```sh
+$ jupyterhub --generate-config
+```
 
-<h4>Create a jupyterhub config: (opt/user-jupyterhub/)</h4>
+## Create jupyterhub cert and key: (/opt/user-jupyterhub/cert/jupyterhub.key and /opt/user-jupyterhub/cert/jupyterhub.crt)
 
-`$ jupyterhub --generate-config`
+```sh
+$ cd /opt/<user>-jupyterhub/cert
+$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout jupyterhub.key -out jupyterhub.crt
+```
 
-<h2>Create jupyterhub cert and key: (/opt/user-jupyterhub/cert/jupyterhub.key and /opt/user-jupyterhub/cert/jupyterhub.crt)</h2>
+## Create and add user to a group
+#### Create a group:
 
-`$ cd /opt/user-jupyterhub/cert`<br>
-`$ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout jupyterhub.key -out jupyterhub.crt`
+```sh
+$ sudo groupadd <groupname>
+```
 
-<h2>Create and add user to a group</h2>
-<h4>Create a group:</h4>
+#### Add a user to a group:
 
-`$ sudo groupadd groupname`
+```sh
+$ sudo adduser <username> <groupname>
+```
 
-<h4>Add a user to a group:</h4>
+#### Check group members:
 
-`$ sudo adduser username groupname`
+```sh
+$ sudo apt install members -y
+$ members <groupname>
+```
 
-<h4>Check group members:</h4>
-
-`$ sudo apt install members -y`<br>
-`$ members groupname`
-
-<h2>Set jupyterhub values</h2>
+Set jupyterhub values</h2>
 <h4>Install the jupyter lab/hub extension:</h4>
 
 `$ jupyter labextension install @jupyterlab/hub-extension`
