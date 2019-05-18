@@ -3,7 +3,7 @@
 #### Monthly:
 
 ```sh
-$ sudo vim /etc/cron.d/'maincron'
+$ sudo vim /etc/cron.d/<maincron>
 ```
 
 ```sh
@@ -36,7 +36,7 @@ done
 #### Weekly:
 
 ```sh
-$ sudo vim /etc/cron.d/'maincron'
+$ sudo vim /etc/cron.d/<maincron>
 ```
 
 ```sh
@@ -65,7 +65,7 @@ done
 #### Daily:
 
 ```sh
-$ sudo vim /etc/cron.d/'maincron'
+$ sudo vim /etc/cron.d/<maincron>
 ```
 
 ```sh
