@@ -15,13 +15,13 @@ $ git clone https://github.com/Nouvellie/ubuntu
 #### Username:
 
 ```sh
-username/email
+<username>/<email>
 ```
 
 #### Password:
 
 ```sh
-password123456
+<password123456>
 ```
 
 ## Credential store and some sudo permissions
@@ -34,8 +34,8 @@ $ sudo chown -Rc $UID .git/ && git config credential.helper store && git pull
 #### If the service doesn't update the branch correctly:
 
 ```sh
-$ git fetch origin branch`
-$ git reset --hard FETCH_HEAD`
+$ git fetch origin <branchname>
+$ git reset --hard FETCH_HEAD
 $ git clean -df
 ```
 
@@ -43,19 +43,19 @@ $ git clean -df
 #### Pull:
 
 ```sh
-$ git pull origin branch
+$ git pull origin <branchname>
 ```
 
 #### Push:
 
 ```sh
-$ git push origin branch
+$ git push origin <branchname>
 ```
 
 #### Hard push: (force push)
 
 ```sh
-$ git push -f origin branch
+$ git push -f origin <branch>
 ```
 
 ## Git ignore (example for xml files)
