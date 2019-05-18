@@ -1,22 +1,22 @@
-<div>
+# CRON
+## Examples for monthly, weekly, daily (with django or git project)
+#### Monthly:
 
-<h1>CRON</h1>
-<h2>Examples for monthly, weekly, daily (with django or git project)</h2>
-<h4>Monthly:</h4>
-
-`$ sudo vim /etc/cron.d/'maincron'`<br>
-
-<p>
-At 09:00 on day-of-month 1.
-</p>
-
+```sh
+$ sudo vim /etc/cron.d/'maincron'
 ```
+
+```sh
+At 09:00 on day-of-month 1.
+```
+
+```sh
 0 9 1 * * root sudo bash /opt/bash/script/log.sh
 ```
 
-<h4>Code for Nginx access/error:</h4>
+#### Code for Nginx access/error:
 
-```
+```sh
 #!/bin/bash
 HOME_DIRS="/opt/log/example"
 DATE_DIR=$(date +%Y-%m-%d)
@@ -33,21 +33,23 @@ for FOLDER in $HOME_DIRS; do
 done
 ```
 
-<h4>Weekly:</h4>
+#### Weekly:
 
-`$ sudo vim /etc/cron.d/'maincron'`<br>
-
-<p>
-At 09:00 on Sunday.
-</p>
-
+```sh
+$ sudo vim /etc/cron.d/'maincron'
 ```
+
+```sh
+At 09:00 on Sunday.
+```
+
+```sh
 0 9 * * 0 root sudo bash /opt/bash/script/update.sh
 ```
 
-<h4>Code for ubuntu update-upgrade-clean:</h4>
+#### Code for ubuntu update-upgrade-clean:
 
-```
+```sh
 #!/bin/bash
 HOME_DIRS="/home/user/"
 
@@ -60,21 +62,23 @@ for FOLDER in $HOME_DIRS; do
 done
 ```
 
-<h4>Daily:</h4>
+#### Daily:
 
-`$ sudo vim /etc/cron.d/'maincron'`<br>
-
-<p>
-At 09:00 on every day-of-week from Sunday through Saturday.
-</p>
-
+```sh
+$ sudo vim /etc/cron.d/'maincron'
 ```
+
+```sh
+At 09:00 on every day-of-week from Sunday through Saturday.
+```
+
+```sh
 0 9 * * 0-6 root sudo bash /opt/bash/script/clean.sh
 ```
 
-<h4>Code for git clean:</h4>
+#### Code for git clean:
 
-```
+```sh
 #!/bin/bash
 HOME_DIRS="/home/user/django-project"
 
@@ -84,6 +88,3 @@ for FOLDER in $HOME_DIRS; do
     sudo git clean -df 
 done
 ```
-
-
-</div>
