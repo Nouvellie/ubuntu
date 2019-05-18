@@ -8,7 +8,7 @@ $ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 
 ## Install
 
-### Run bash:
+#### Run bash:
 
 ```sh
 $ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh
@@ -20,20 +20,17 @@ $ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh
 yes
 ```
 
-<h4>Path:</h4>
+#### Path:
 
-<p>
+```sh
+/opt/anaconda3
+```
 
+#### Do you wish the installer to initialize Anaconda3:
 
-*/opt/anaconda3*
-
-</p>
-
-<h4>Do you wish the installer to initialize Anaconda3:</h4>
-
-<p>
-
-*yes (important)*
+```sh
+yes # (important)
+```
 
 </p>
 
