@@ -73,3 +73,12 @@ c.NotebookApp.contents_manager_class = "jupytext.TextFileContentsManager"
 c.ContentsManager.preferred_jupytext_formats_read = "py:sphinx"
 c.ContentsManager.sphinx_convert_rst2md = True
 ```
+
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
