@@ -1,24 +1,24 @@
-<div>
+# ANACONDA
 
-<h1>ANACONDA</h1>
-<h2>Download</h2>
+## Download
 
-`$ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`
+```sh
+$ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+```
 
-<h2>Install</h2>
-<h4>Run bash:</h4>
+## Install
 
-`$ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh`
+### Run bash:
 
-<p>
+```sh
+$ sudo bash ./Anaconda3-2019.03-Linux-x86_64.sh
+```
 
 <kbd>ENTER</kbd><br>
 
-<p>
-
-*yes*
-
-</p>
+```sh
+yes
+```
 
 <h4>Path:</h4>
 
