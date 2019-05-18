@@ -1,5 +1,4 @@
 # ANACONDA
-
 ## Download
 
 ```sh
@@ -7,7 +6,6 @@ $ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 ```
 
 ## Install
-
 #### Run bash:
 
 ```sh
@@ -29,26 +27,29 @@ yes
 #### Do you wish the installer to initialize Anaconda3:
 
 ```sh
-yes # (important)
+yes # (Important)
 ```
 
-</p>
+## Envs list
 
-</p>
-<h2>Envs list</h2>
+```sh
+$ conda info --envs
+```
 
-`$ conda info --envs`
+## Libs list on envs
 
-<h2>Libs list on envs</h2>
+```sh
+$ conda list -e
+```
 
-`$ conda list -e`
+## Conda update
 
-<h2>Conda update</h2>
+```sh
+$ conda update -n base -c defaults conda
+```
 
-`$ conda update -n base -c defaults conda`
-
-<h2>To access conda commands with any user</h2>
-<h4>Edit environment:</h4>
+## To access conda commands with any user
+#### Edit environment:
 
 `$ sudo vim /etc/environment`
 
