@@ -21,7 +21,7 @@ yes
 #### Path:
 
 ```sh
-/opt/anaconda3 \*Asd\*
+/opt/anaconda3
 ```
 
 #### Do you wish the installer to initialize Anaconda3:
@@ -51,60 +51,74 @@ $ conda update -n base -c defaults conda
 ## To access conda commands with any user
 #### Edit environment:
 
-`$ sudo vim /etc/environment`
-
-<h4>[environmnet]</h4>
-
+```sh
+$ sudo vim /etc/environment
 ```
+
+#### [environmnet]
+
+```sh
 PATH=/opt/anaconda3/bin:PATH
 ```
 
-<h2>Create an envs</h2>
-<h4>Default:</h4>
+## Create an envs
+#### Default:
 
-`$ conda create --name envsname python=3.6 -y`
+```sh
+$ conda create --name envsname python=3.6 -y
+```
 
-<h4>Giving a Path: (and the default python version)</h4>
+#### Giving a Path: (and the default python version)
 
-`$ conda create --prefix /opt/anaconda3/envs/envsname python=3.6 -y`
+```sh
+$ conda create --prefix /opt/anaconda3/envs/envsname python=3.6 -y
+```
 
-<h2>Export/import a created envs</h2>
-<h4>Export:</h4>
+## Export/import a created envs
+#### Export:
 
-`$ conda env export | grep -v "^prefix: " > envsname.yml`
+```sh
+$ conda env export | grep -v "^prefix: " > envsname.yml
+```
 
-<h4>Import:</h4>
+#### Import:
 
-`$ conda env create -f envsname.yml`
+```sh
+$ conda env create -f envsname.yml
+```
 
-<h2>MySQL server out envs (to avoid errors if the project uses mysql db (important))</h2>
+## MySQL server out envs (to avoid errors if the project uses mysql db (important))
 
-`$ sudo apt install mysql-server -y`
+```sh
+$ sudo apt install mysql-server -y
+```
 
-<h2>Conda activate/deactivate</h2>
-<h4>Activate:</h4>
+## Conda activate/deactivate
+#### Activate:
 
-`$ conda activate envsname`
+```sh
+$ conda activate envsname
+```
 
-<h4>Deactivate:</h4>
+#### Deactivate:
 
-`$ conda deactivate`
+```sh
+$ conda deactivate
+```
 
-<h2>Install envs in a specific directory</h2>
-<h4>Add directory to conda</h4>
+## Install envs in a specific directory
+#### Add directory to conda:
 
-`$ conda config --append envs_dirs /home/user/project/env`
+```sh
+$ conda config --append envs_dirs /home/user/project/env
+```
 
-<h4>Create conda env in the specific directory</h4>
+#### Create conda env in the specific directory:
 
-`$ conda create --prefix /home/user/project/env/envsname python=3.6 -y`
+```sh
+$ conda create --prefix /home/user/project/env/envsname python=3.6 -y
+```
 
-<h2>More libs (conda install lib)</h2>
-
-<p>
+## More libs (conda install lib)
 
 [Anaconda packages.](https://anaconda.org/anaconda/repo)
-
-</p>
-
-</div>
