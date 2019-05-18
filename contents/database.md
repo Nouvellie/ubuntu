@@ -28,11 +28,11 @@ mysql> SOURCE <dumpname>.sql;
 #### Create user:
 
 ```sql
-mysql> CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'db-password';
+mysql> CREATE USER '<ubuntu>'@'%' IDENTIFIED BY '<db-password>';
 ```
 
 #### Grant all privileges:
 
 ```sql
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO '<ubuntu>'@'%' WITH GRANT OPTION;
 ```
