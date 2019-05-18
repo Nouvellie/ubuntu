@@ -21,7 +21,7 @@ yes
 #### Path:
 
 ```sh
-/opt/anaconda3
+/opt/anaconda3 \*Asd\*
 ```
 
 #### Do you wish the installer to initialize Anaconda3:
