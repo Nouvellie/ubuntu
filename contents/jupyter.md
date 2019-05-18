@@ -1,10 +1,10 @@
-<div>
+# JUPYTER HUB/LAB</h1>
+## Settings as root
 
-<h1>JUPYTER HUB/LAB</h1>
-<h2>Settings as root</h2>
-
-`$ sudo su`<br>
-`$ cd`
+```sh
+$ sudo su
+$ cd
+```
 
 <h2>Download and install Anaconda</h2>
 
