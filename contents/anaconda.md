@@ -65,26 +65,26 @@ PATH=/opt/anaconda3/bin:PATH
 #### Default:
 
 ```sh
-$ conda create --name envsname python=3.6 -y
+$ conda create --name <envsname> python=3.6 -y
 ```
 
 #### Giving a Path: (and the default python version)
 
 ```sh
-$ conda create --prefix /opt/anaconda3/envs/envsname python=3.6 -y
+$ conda create --prefix /opt/anaconda3/envs/<envsname> python=3.6 -y
 ```
 
 ## Export/import a created envs
 #### Export:
 
 ```sh
-$ conda env export | grep -v "^prefix: " > envsname.yml
+$ conda env export | grep -v "^prefix: " > <envsname>.yml
 ```
 
 #### Import:
 
 ```sh
-$ conda env create -f envsname.yml
+$ conda env create -f <envsname>.yml
 ```
 
 ## MySQL server out envs (to avoid errors if the project uses mysql db (important))
@@ -97,7 +97,7 @@ $ sudo apt install mysql-server -y
 #### Activate:
 
 ```sh
-$ conda activate envsname
+$ conda activate <envsname>
 ```
 
 #### Deactivate:
@@ -116,7 +116,7 @@ $ conda config --append envs_dirs /home/user/project/env
 #### Create conda env in the specific directory:
 
 ```sh
-$ conda create --prefix /home/user/project/env/envsname python=3.6 -y
+$ conda create --prefix /home/user/project/env/<envsname> python=3.6 -y
 ```
 
 ## More libs (conda install lib)
