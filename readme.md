@@ -17,17 +17,5 @@
   <img width="75%" height="75%" src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" alt="Ubuntu Logo">
 </p>
 
-```sh
-$ print caca
-```
-
-```shell
-$ print caca
-```
-
-```bash
-$ print caca
-```
-
 
 ***Created by Nouvellie, 2019/04/04***
