@@ -110,13 +110,13 @@ $ conda deactivate
 #### Add directory to conda:
 
 ```sh
-$ conda config --append envs_dirs /home/user/project/env
+$ conda config --append envs_dirs /home/<user>/project/env
 ```
 
 #### Create conda env in the specific directory:
 
 ```sh
-$ conda create --prefix /home/user/project/env/<envsname> python=3.6 -y
+$ conda create --prefix /home/<user>/<projectname>/env/<envsname> python=3.6 -y
 ```
 
 ## More libs (conda install lib)
