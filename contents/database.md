@@ -10,18 +10,18 @@ $ sudo apt install mysql-server -y
 #### Create:
 
 ```sql
-mysql> CREATE DATABASE IF NOT EXISTS namedb;
+mysql> CREATE DATABASE IF NOT EXISTS <namedb>;
 ```
 #### Select:
 
 ```sql
-mysql> USE namedb;
+mysql> USE <namedb>;
 ```
 
 #### Dumped:
 
 ```sql
-mysql> SOURCE dump.sql;
+mysql> SOURCE <dumpname>.sql;
 ```
 
 ## Create user and grant all privileges
