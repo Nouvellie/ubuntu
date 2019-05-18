@@ -51,7 +51,7 @@ At 09:00 on Sunday.
 
 ```sh
 #!/bin/bash
-HOME_DIRS="/home/user/"
+HOME_DIRS="/home/<user>/"
 
 for FOLDER in $HOME_DIRS; do
     sudo apt update -y
@@ -80,10 +80,10 @@ At 09:00 on every day-of-week from Sunday through Saturday.
 
 ```sh
 #!/bin/bash
-HOME_DIRS="/home/user/django-project"
+HOME_DIRS="/home/<user>/<django-project>"
 
 for FOLDER in $HOME_DIRS; do
-	cd /home/user/django-project
+	cd /home/<user>/<django-project>
     sudo git reset --hard
     sudo git clean -df 
 done
