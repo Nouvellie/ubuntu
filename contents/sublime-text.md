@@ -1,4 +1,4 @@
-#SUBLIME TEXT
+# SUBLIME TEXT
 ## Ubuntu software
 
 Search and install.
