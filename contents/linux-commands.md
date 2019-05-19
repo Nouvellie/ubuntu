@@ -1,59 +1,77 @@
-<div>
+# LINUX COMMANDS
+## Update, upgrade, clean and autoremove
 
-<h1>LINUX COMMANDS</h1>
-<h2>Update, upgrade, clean and autoremove</h2>
-
-`$ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y`
-
-<h2>Delete</h2>
-<h4>File/files:</h4>
-
-`$ sudo rm -rf filename1 filename2`
-
-<h4>File set: (xml example)</h4>
-
-`$ sudo rm -rf *.xml`
-
-<h2>Print working directory</h2>
-
-`$ pwd`
-
-<h2>Shutdown</h2>
-
-`$ sudo shutdown -r 0`
-
-<h2>Environment variables</h2>
-<h4>Set it:</h4>
-
-`$ sudo vim /etc/environment`
-
-<h4>[environment]</h4>
-
-```
-TEST="PATH"
-TEST2="PATH2"
+```sh
+$ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
 ```
 
-<h4>Call a variable:</h4>
+## Delete
+#### File/files:
 
-`$ cd $TEST`<br>
-`$ cd $TEST2`
+```sh
+$ sudo rm -rf <filename1> <filename2>
+```
 
-<h2>Rename files</h2>
+#### File set: (xml example)
 
-`$ sudo mv namefile newnamefile`
+```sh
+$ sudo rm -rf *.xml
+```
 
-<h2>Chmod</h2>
-<h4>777 to all folder/subfolders:</h4>
+## Print working directory
 
-`$ sudo chmod -R 777 foldername`
+```sh
+$ pwd
+```
 
-<h2>System information</h2>
+## Shutdown
 
-`$ sudo dmidecode | grep -A 9 "System Information"`
+```sh
+$ sudo shutdown -r 0
+```
 
-<h2>Display current time & data setting</h2>
+## Environment variables
+#### Set it:
 
-`$ sudo hwclock --show`
+```sh
+$ sudo vim /etc/environment
+```
 
-</div>
+#### [environment]
+
+```sh
+<TEST1>="PATH1"
+<TEST2>="PATH2"
+```
+
+#### Call a variable:
+
+```sh
+$ cd $<TEST1>
+$ cd $<TEST2>
+```
+
+## Rename files
+
+```sh
+$ sudo mv <filename> <newfilename>
+```
+
+## Chmod
+#### 777 to all folder/subfolders:
+
+```sh
+$ sudo chmod -R 777 <foldername>
+```
+
+## System information
+
+```sh
+$ sudo dmidecode | grep -A 9 "System Information"
+```
+
+## Display current time & data setting
+
+```sh
+$ sudo hwclock --show
+```
