@@ -1,11 +1,11 @@
-<div>
+# VIM
+## Install
 
-<h1>VIM</h1>
-<h2>Install</h2>
+```sh
+$ sudo apt install vim -y
+```
 
-`$ sudo apt install vim -y`
-
-<h2>Commands</h2>
+## Commands
 
 `:q` To quit. (short for *:quit*)<br>
 `:q!` To quit without saving. (short for *:quit!*)<br>
@@ -16,17 +16,8 @@
 `:qa` To quit all. (short for *:quitall*)<br>
 `:cq` To quit without saving and make Vim return non-zero error. (i.e. exit with error)
 
-<h2>Extra</h2>
-
-<p>
+## Extra
 
 You can also exit Vim directly from **normal mode** by typing *ZZ* to save and quit (same as *:x*) or *ZQ* to just quit (same as *:q!*). (Note that case is important here. *ZZ* and *zz* do not mean the same thing.)
 
-</p>
-<p>
-
 Vim has extensive **help**, that you can access with the *:help* command, where you can find answers to all your questions and a tutorial for beginners.
-
-</p>
-
-</div>	
