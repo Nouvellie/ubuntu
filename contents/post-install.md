@@ -63,5 +63,6 @@ $ sudo apt install chrome-gnome-shell -y
 Switch to **ON** and click *install*.
 
 #### Restarts GNOME Shell:
+
 <kbd>Alt</kbd> + <kbd>F2</kbd><br>
 <kbd>r</kbd> + <kbd>ENTER</kbd>
