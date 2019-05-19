@@ -70,3 +70,22 @@ $ git push -f origin <branch>
 ```sh
 **/*.xml
 ```
+
+## Alias
+#### Status
+
+```sh
+$ git config --global alias.s "status -s -b"
+```
+
+#### Add all
+
+```sh
+$ git config --global alias.a "add ."
+```
+
+#### Push <branchname>
+
+```sh
+$ git config --global alias.p "push origin <branchname>"
+```
