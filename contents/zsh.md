@@ -63,3 +63,24 @@ $ for i in <user1> <user2> <user3> <user4> <userX>; do cp .zshrc /home/${i}; cho
 ```sh
 $ for i in <user1> <user2> <user3> <user4> <userX>; do chsh --shell=`which zsh` ${i}; done
 ```
+
+## If [oh-my-zsh] Insecure completion-dependent directories detected
+
+#### Open file in the root directory:
+
+```sh
+$ sudo vim /root/.zshrc
+```
+
+#### Disable compfix:
+
+```sh
+ZSH_COMPFIX_DISABLE=true
+```
+
+##### Zshrc export and active zsh shell again:
+
+```sh
+$ for i in <user1> <user2> <user3> <user4> <userX>; do cp .zshrc /home/${i}; chown ${i} /home/${i}/.zshrc; done
+$ for i in <user1> <user2> <user3> <user4> <userX>; do chsh --shell=`which zsh` ${i}; done
+```
