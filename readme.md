@@ -13,7 +13,7 @@
 - [Vim.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/vim.md)
 - [Zsh.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/zsh.md)
 
-<p align="center">
+<br><br><p align="center">
   <img width="75%" height="75%" src="https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/img/ubuntu-logo.png" alt="Ubuntu Logo">
 </p>
 
