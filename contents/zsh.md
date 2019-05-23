@@ -81,6 +81,5 @@ ZSH_COMPFIX_DISABLE=true
 ##### Zshrc export and active zsh shell again:
 
 ```sh
-$ for i in <user1> <user2> <user3> <user4> <userX>; do cp .zshrc /home/${i}; chown ${i} /home/${i}/.zshrc; done
-$ for i in <user1> <user2> <user3> <user4> <userX>; do chsh --shell=`which zsh` ${i}; done
+$ sudo chmod -R 755 /opt/oh-my-zsh
 ```
