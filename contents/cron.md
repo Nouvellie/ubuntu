@@ -55,9 +55,9 @@ HOME_DIRS="/home/<user>/"
 
 for FOLDER in $HOME_DIRS; do
     sudo apt update -y
-    sudo apt upgrad -y
+    sudo apt upgrade -y
     sudo apt autoremove -y
-    sudo apt install -y
+    sudo apt install -f -y
     sudo apt auto-clean -y
 done
 ```
