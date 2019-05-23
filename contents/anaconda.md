@@ -58,7 +58,7 @@ $ sudo vim /etc/environment
 #### [environmnet]
 
 ```sh
-PATH=/opt/anaconda3/bin:PATH
+PATH=/opt/anaconda3/bin:$PATH
 ```
 
 ## Create an envs
