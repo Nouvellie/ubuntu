@@ -73,17 +73,13 @@ WantedBy=multi-user.target
 #### Start, Enable, Status:
 
 ```sh
-$ sudo systemctl start gunicorn
-$ sudo systemctl enable gunicorn
-$ sudo systemctl status gunicorn
+$ sudo systemctl start gunicorn && sudo systemctl enable gunicorn && sudo systemctl status gunicorn
 ```
 
 #### Journal and daemon reload:
 
 ```sh
-$ sudo journalctl -u gunicorn
-$ sudo systemctl daemon-reload
-$ sudo systemctl restart gunicon
+$ sudo journalctl -u gunicorn && sudo systemctl daemon-reload && sudo systemctl restart gunicorn
 ```
 
 ## Nginx sites available
@@ -100,7 +96,7 @@ server {
         server_name hosting-IP; # (Example 192.168.0.1)
         location = /favicon.ico { access_log off; log_not_found off; }
         location /static/ {
-                root /home/<user>/<django-project>/<project-name>;
+                root /home/<user>/<django-project>/;
         }
         location / {
                 include proxy_params;
@@ -118,10 +114,7 @@ $ sudo ln -s /etc/nginx/sites-available/<project-name>/etc/nginx/sites-enabled
 #### Nginx last settings:
 
 ```sh
-$ sudo nginx -t
-$ sudo systemctl restart nginx
-$ sudo ufw delete allow 8000
-$ sudo ufw allow 'Nginx Full'
+$ sudo nginx -t && sudo systemctl restart nginx && sudo ufw delete allow 8000 && sudo ufw allow 'Nginx Full'
 ```
 
 ## Restart gunicorn and all is ready
