@@ -47,7 +47,7 @@ $ conda list -e
 ## Conda update
 
 ```sh
-$ conda update -n base -c defaults conda
+$ conda update -n base -c defaults conda -y
 ```
 
 ## To access conda commands with any user
