@@ -108,7 +108,7 @@ server {
 #### From sites available to sites enabled: (nginx conf)
 
 ```sh
-$ sudo ln -s /etc/nginx/sites-available/<project-name>/etc/nginx/sites-enabled
+$ sudo ln -s /etc/nginx/sites-available/<project-name> /etc/nginx/sites-enabled
 ```
 
 #### Nginx last settings:
