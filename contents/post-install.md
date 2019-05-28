@@ -2,7 +2,7 @@
 ## Update all
 
 ```sh
-$ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
+$ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install -f -y && sudo apt auto-clean -y
 ```
 
 ## Canonical partners
