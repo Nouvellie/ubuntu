@@ -47,7 +47,7 @@ At 09:00 on Sunday.
 0 9 * * 0 root sudo bash /opt/bash/script/update.sh
 ```
 
-#### Code for ubuntu update-upgrade-clean:
+#### Code for Ubuntu update-upgrade-clean:
 
 ```sh
 #!/bin/bash
