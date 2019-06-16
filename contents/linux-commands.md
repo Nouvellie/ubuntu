@@ -75,3 +75,10 @@ $ sudo dmidecode | grep -A 9 "System Information"
 ```sh
 $ sudo hwclock --show
 ```
+
+## Monitoring
+
+```sh
+$ sudo apt install htop -y
+$ htop
+```
