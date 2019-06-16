@@ -34,7 +34,7 @@ $ sudo mkdir /opt/oh-my-zsh
 $ sudo cp -r /home/<user>/.oh-my-zsh/ /opt/oh-my-zsh/
 ```
 
-## Copy zsh root to user
+## Copy Zsh root to user
 
 ```sh
 $ sudo cp -r /root/.zshrc /home/<user>
