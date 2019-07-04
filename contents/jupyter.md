@@ -10,13 +10,13 @@ $ cd
 
 [Anaconda.](https://github.com/Nouvellie/ubuntu/blob/ubuntu/contents/anaconda.md)
 
-## Update conda
+## Update Conda
 
 ```sh
 $ conda update -n base -c defaults conda -y
 ```
 
-## Create an envs to run jupyterhub and our libraries (python3.6)
+## Create an envs to run JupyterHub and our libraries (python3.6)
 
 ```sh
 $ conda create --name <jupyterbase> python=3.6 -y
@@ -28,14 +28,14 @@ $ conda create --name <jupyterbase> python=3.6 -y
 $ conda install -c conda-forge mysql-connector-python -y && conda install -c pandas pymysql -y && conda install -c conda-forge mysqlclient -y && conda install -c kalefranz mysql-server -y && conda install -c conda-forge django -y && conda install -c conda-forge djangorestframework -y && conda install -c conda-forge keras -y && conda install -c anaconda tensorflow -y && conda install -c conda-forge django-cors-headers -y && conda install -c conda-forge django-filter -y && conda install -c conda-forge pandas -y && conda install -c conda-forge bokeh -y && conda install -c conda-forge appdirs -y && conda install -c conda-forge lxml -y && conda install -c conda-forge wfdb -y && conda install -c conda-forge pywavelets -y && conda install -c conda-forge sqlparse -y && conda install -c conda-forge jupyterhub -y && conda install -c conda-forge notebook -y && conda install -c conda-forge configurable-http-proxy -y && conda install -c conda-forge jupyterlab -y && conda install -c conda-forge xlrd -y && pip install dtw -y && conda install -c conda-forge gunicorn -y
  ```
 
-## Create a jupyterhub dir (/opt/user-jupyterhub) and settings
+## Create a JupyterHub dir (/opt/user-jupyterhub) and settings
 #### Install default files:
 
 ```sh
 $ mkdir /opt/<user>-jupyterhub
 ```
 
-#### Generate jupyterhub sqlite and cookie secret:
+#### Generate JupyterHub SQLite and cookie secret:
 
 ```sh
 $ cd /opt/<user>-jupyterhub
@@ -43,13 +43,13 @@ $ conda activate <jupyterbase>
 $ jupyterhub
 ```
 
-#### Create a jupyterhub config: (opt/user-jupyterhub/)
+#### Create a JupyterHub config: (opt/user-jupyterhub/)
 
 ```sh
 $ jupyterhub --generate-config
 ```
 
-## Create jupyterhub cert and key: (/opt/user-jupyterhub/cert/jupyterhub.key and /opt/user-jupyterhub/cert/jupyterhub.crt)
+## Create JupyterHub cert and key: (/opt/user-jupyterhub/cert/jupyterhub.key and /opt/user-jupyterhub/cert/jupyterhub.crt)
 
 ```sh
 $ cd /opt/<user>-jupyterhub/cert
@@ -76,8 +76,8 @@ $ sudo apt install members -y
 $ members <groupname>
 ```
 
-## Set jupyterhub values
-#### Install the jupyter lab/hub extension:
+## Set JupyterHub values
+#### Install the Jupyter Lab/Hub extension:
 
 ```sh
 $ jupyter labextension install @jupyterlab/hub-extension
@@ -108,7 +108,7 @@ c.LocalAuthenticator.group_whitelist = ['<groupname>']
 :wq!
 ```
 
-#### Show conda environments in jupyterhub kernell:
+#### Show Conda environments in JupyterHub Kernell:
 
 ```sh
 $ conda install -c conda-forge nb_conda_kernels

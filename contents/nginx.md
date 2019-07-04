@@ -26,7 +26,7 @@ $ sudo ufw allow 8000
 allowhost['<Your IP>']
 ```
 
-#### Run Django Server: (at port 8000)
+#### Run Django server: (at port 8000)
 
 ```sh
 $ python3 manage.py runserver 0.0.0.0:8000
@@ -39,13 +39,13 @@ $ cd /home/<user>/<django-project>/<project-name>
 $ gunicorn --bind 0.0.0.0:8000 <project-name>.wsgi
 ```
 
-## Create Gunicorn Service
+## Create Gunicorn service
 
 ```sh
 $ sudo vim /etc/systemd/system/gunicorn.service
 ```
 
-#### Deactivate conda envs:
+#### Deactivate Conda envs:
 
 ```sh
 $ conda deactivate
@@ -55,7 +55,7 @@ $ conda deactivate
 
 ```sh
 [Unit]
-Description=gunicorn daemon
+Description=Gunicorn Daemon Service
 After=network.target
 
 [Service]
@@ -69,14 +69,14 @@ WantedBy=multi-user.target
 
 ```
 
-## Enable gunicorn, and show status
+## Enable Gunicorn, and show status
 #### Start, Enable, Status:
 
 ```sh
 $ sudo systemctl start gunicorn && sudo systemctl enable gunicorn && sudo systemctl status gunicorn
 ```
 
-#### Journal and daemon reload:
+#### Journal and Daemon reload:
 
 ```sh
 $ sudo journalctl -u gunicorn && sudo systemctl daemon-reload && sudo systemctl restart gunicorn
@@ -105,7 +105,7 @@ server {
 }
 ```
 
-#### From sites available to sites enabled: (nginx conf)
+#### From sites available to sites enabled: (Nginx conf)
 
 ```sh
 $ sudo ln -s /etc/nginx/sites-available/<project-name> /etc/nginx/sites-enabled
@@ -117,7 +117,7 @@ $ sudo ln -s /etc/nginx/sites-available/<project-name> /etc/nginx/sites-enabled
 $ sudo nginx -t && sudo systemctl restart nginx && sudo ufw delete allow 8000 && sudo ufw allow 'Nginx Full'
 ```
 
-## Restart gunicorn and all is ready
+## Restart Gunicorn and everything will be ready
 
 ```sh
 $ sudo systemctl restart gunicorn

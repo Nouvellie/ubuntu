@@ -50,7 +50,7 @@ $ conda list -e
 $ conda update -n base -c defaults conda -y
 ```
 
-## To access conda commands with any user
+## To access Conda commands with any user
 #### Edit environment:
 
 ```sh
@@ -89,7 +89,7 @@ $ conda env export | grep -v "^prefix: " > <envsname>.yml
 $ conda env create -f <envsname>.yml
 ```
 
-## MySQL server out envs (to avoid errors if the project uses mysql db (important))
+## MySQL server out envs (to avoid errors if the project uses MySQL DB (important))
 
 ```sh
 $ sudo apt install mysql-server -y
@@ -109,18 +109,18 @@ $ conda deactivate
 ```
 
 ## Install envs in a specific directory
-#### Add directory to conda:
+#### Add directory to Conda:
 
 ```sh
 $ conda config --append envs_dirs /home/<user>/project/env
 ```
 
-#### Create conda env in the specific directory:
+#### Create Conda env in the specific directory:
 
 ```sh
 $ conda create --prefix /home/<user>/<projectname>/env/<envsname> python=3.6 -y
 ```
 
-## More libs (conda install lib)
+## More libs (Conda install lib)
 
 [Anaconda packages.](https://anaconda.org/anaconda/repo)
