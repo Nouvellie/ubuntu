@@ -82,3 +82,13 @@ $ sudo hwclock --show
 $ sudo apt install htop -y
 $ htop
 ```
+
+## SpeedTest (net)
+
+```sh
+$ sudo su
+$ cd
+$ wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+$ chmod + speedtest-cli
+$ ./speedtest-cli
+```
