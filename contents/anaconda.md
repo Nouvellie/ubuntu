@@ -42,6 +42,7 @@ $ conda info --envs
 
 ```sh
 $ conda list -e
+$ conda list --show-channel-urls
 ```
 
 ## Conda update
