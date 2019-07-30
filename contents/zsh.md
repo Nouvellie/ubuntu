@@ -56,7 +56,7 @@ $ upgrade_oh_my_zsh
 #### Zshrc export:
 
 ```sh
-$ for i in <user1> <user2> <user3> <user4> <userX>; do cp .zshrc /home/${i}; chown ${i} /home/${i}/.zshrc; done
+$ for i in <user1> <user2> <user3> <user4> <userX>; do cp /root/.zshrc /home/${i}; chown ${i} /home/${i}/.zshrc; done
 ```
 
 #### Active Zsh shell
