@@ -41,3 +41,24 @@ II. Config material theme:
 - **Tabs:** Bold, small and autowidth.
 - **Sidebar:** Compact sidebar, arrow folder and big fileicons.
 - **Panels:** Bright scrollbar, contrast mode, small status bar.
+
+#### Toggle comment:
+
+- Go to:
+
+Preferences --> Key bindings.
+
+- Paste the following code:
+
+[
+	{ "keys": ["ctrl+-"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+-"], "command": "toggle_comment", "args": { "block": true } },
+
+	{ "keys": ["ctrl+}"], "command": "indent" },
+	{ "keys": ["ctrl+{"], "command": "unindent" },
+]
+
+
+- Result: (activate toggle)
+
+<kbd>Ctrl</kbd> + <kbd>-</kbd>
