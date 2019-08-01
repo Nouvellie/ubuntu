@@ -62,7 +62,7 @@ After=network.target
 User=<user>
 Group=www-data
 WorkingDirectory=/home/<user>/<django-project>/<project-name>
-ExecStart=/home/<user>/<django-project>/<project-name>/env/<envsname>/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/<user>/<django-project>/<project-name>.sock <project-name>.wsgi:application
+ExecStart=/home/<user>/<django-project>/<project-name>/env/<envsname>/bin/gunicorn --workers 3 --threads 2 --preload -k gthread --max-requests 1 --bind unix:/home/<user>/<django-project>/<project-name>.sock <project-name>.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
